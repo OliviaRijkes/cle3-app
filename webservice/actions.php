@@ -1,5 +1,14 @@
 <?php
-
+$superMarketLocations = [
+    [
+        "name" => "entrance",
+        "location" => ""
+    ],
+    [
+        "name" => "intersection1",
+        "location" => ""
+    ]
+];
 
 /** * @return array */
 function getPlayers(): array
