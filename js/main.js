@@ -1,14 +1,16 @@
 let lookDirection
 let position
 let goal = {x: 0, y:0}
-let productspace
+
+let products
+// let productSearch
 
 window.addEventListener('load', init)
 
 function init(){
     fetchStuff('http://cle3-app.test/webservice/',loadProducts)
-    productspace = document.getElementById('productspace')
-    productspace.addEventListener('click', productClickHandler)
+    products = document.getElementById('products')
+    products.addEventListener('click', productClickHandler)
 
 }
 function fetchStuff(url, callback) {
@@ -41,10 +43,12 @@ function productClickHandler(e){
     }
 }
 function loadProducts(data){
-    //fill the productSpace
+    //fill the products
 }
 function loadDetails(product){
     //details pop-up
+    //open the map
+    //show location on map
 }
 
 //if the user hits an intersection
