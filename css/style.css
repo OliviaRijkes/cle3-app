@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    background-color: lightblue;
+}
+
+
+.navigation {
+    display: flex;
+    gap: 15vw;
+}
+
+.navigation img {
+    height: 10vh;
+    width: 10vw;
+}
+
