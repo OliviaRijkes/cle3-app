@@ -1,17 +1,38 @@
 <?php
-$superMarketLocations = [
-    [
-        "name" => "entrance",
-        "location" => ""
+$intersectionLocationsRaw = [
+    "leftToRight" => [
+        1,2,3
     ],
-    [
-        "name" => "intersection1",
-        "location" => ""
+    "upToDown" =>[
+        1,2,3,4,5
     ]
 ];
 
-const products = [
+$superMarketLocations = [];
+foreach ($intersectionLocationsRaw["leftToRight"] as $xDirection) {
+    $superMarketLocations["$xDirection"] = $intersectionLocationsRaw["upToDown"];
+}
+// location as: [x,y]
 
+//these change when you enter (into the radius of) the intersectionPosition (changelocation)
+$lookDirection = "up";
+$location = [3,5];
+
+//these change by changes on the app (changeGoal)
+$goal = [1,5];
+
+//these happen when there is changelocation or changeGoal
+//first go up than go left, afterward it gives left or right for the product position
+$goUp = $location[1]-$endLocation[1];
+$goLeft = $location[0]-$endLocation[0];
+
+//if $goUp = negative -> go up in (left,right,forward) based of $lookDirection
+//                      else down in (left,right,forward) based of $lookDirection
+//if $goLeft = negative -> go right in (left,right,forward) based of $lookDirection
+//                      else left in (left,right,forward) based of $lookDirection
+
+
+const products = [
     [
         "id" => 1,
         "name" => "AH Penne Rigate",
