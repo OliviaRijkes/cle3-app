@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/main.js" defer></script>
+</head>
+<body>
+<nav>
+    <div class="navigation">
+
+        <img src="https://static.ah.nl/ah-static/images/ah-ui-bridge-components/logo/logo-ah.svg"
+             alt="Logo van de supermarkt">
+        <a href="index.html"> Home </a>
+        <a href=""> Actieproducten</a>
+        <a href="info.html"> Veel gestelde vragen</a>
+        <!--        <button> Vraag om assisentie</button>-->
+    </div>
+</nav>
+<main>
+
+    <div class="app-container">
+        <div class="map-section">
+            <div class="map-grid">
+
+                <div id="dynamic-path"></div>
+                <div class="pin" id="destination-pin">📍</div>
+
+                <div class="user-location">
+                    <p>U staat hier</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="assistance-bar" id="assist-bar">
+                <button class="btn-assist" onclick="askAssistance()">Vraag om assistentie</button>
+                <div class="assist-status" id="assist-msg">Assistentie onderweg
+                    <button onclick="cancelAssistance()" class="btn-cancel">Annuleer</button>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Waar ben je naar op zoek?" onkeyup="searchProduct()">
+            </div>
+        </div>
+
+    </div>
+
+    <dialog class="modal" id="product-detail">
+        <div class="modal-content"></div>
+        <button class="modal-close">❌</button>
+    </dialog>
+
+</main>
+</body>
+</html>

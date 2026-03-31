@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: lightblue;
+}
+
+nav {
+    background-color: white;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 16vw;
+    padding-bottom: 3vh;
+
+    a {
+        margin-top: 3.5vh;
+        font-size: 1.2rem;
+        font-family: Ebrima;
+        text-decoration: none;
+        color: #26313A;
+        transition: all 0.2s ease;
+        padding: 5px;
+        border: 2px solid transparent;
+        border-radius: 20px;
+    }
+
+    a:hover {
+        border: 2px solid gray;
+        border-radius: 20px;
+        background-color: lightblue;
+        color: white;
+        padding: 5px;
+    }
+
+    img {
+        margin-top: 2.7vh;
+        height: 5vh;
+        width: 5vw;
+    }
+}
+
+
+/*.navigation button {*/
+/*    height: 8vh;*/
+/*    width: 25vw;*/
+/*}*/
