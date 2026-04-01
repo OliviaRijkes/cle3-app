@@ -48,7 +48,12 @@ nav {
         height: 5vh;
         width: 5vw;
     }
+
+    .searchIcon {
+        font-size: 2rem;
+    }
 }
+
 
 @media (max-width: 480px) {
 
