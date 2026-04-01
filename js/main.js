@@ -2,16 +2,23 @@ let lookDirection
 let position
 let goal = {x: 0, y: 0}
 
-let products
+let products;
+
+let body;
+let detailModal;
+let detailContent;
 // let productSearch
 
 window.addEventListener('load', init)
 
 function init() {
-    fetchStuff('http://cle3-app.test/webservice/', loadProducts)
+    fetchStuff('https://cle3-app.test/webservice/', loadProducts)
     products = document.querySelector('#product-list')
     products.addEventListener('click', productClickHandler)
 
+    body = document.querySelector('body');
+    detailModal = document.querySelector('#product-detail');
+    detailContent = document.querySelector('.modal-content');
 }
 
 function fetchStuff(url, callback) {
@@ -71,6 +78,7 @@ function loadProducts(data) {
         price.textContent = product.price
         info.dataset.id = product.id
         route.dataset.category = product.category
+        info.dataset.name = product.name
 
         products.appendChild(article)
         article.appendChild(productImage)
@@ -88,6 +96,26 @@ function loadDetails(product) {
     //details pop-up
     //open the map
     //show location on map
+
+
+    const productName = product.dataset.name;
+    const productId = product.dataset.id;
+
+    detailContent.textContent = '';
+
+
+    const title = document.createElement('h1');
+    title.textContent = `Ingredienten ${productName}`
+    detailContent.appendChild(title);
+
+    const details = document.createElement('p');
+    details.textContent = `${ingredients}`;
+    detailContent.appendChild(details);
+
+    detailModal.showModal();
+    body.classList.add('dialog-open');
+
+
 }
 
 //if the user hits an intersection
@@ -97,3 +125,7 @@ function showNewDirection() {
 
 }
 
+
+function ajaxErrorHandler(error) {
+    console.error(error)
+}
