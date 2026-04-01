@@ -123,14 +123,13 @@ nav {
     }
 
     .rowContainer img {
-        height: 40vw;
         width: 40vw;
         border: 2px solid black;
         border-radius: 10px;
     }
 
     video {
-        height: 40vw;
+        height: auto;
         width: 40vw;
         border: 2px solid black;
         border-radius: 10px;
