@@ -80,8 +80,6 @@ function loadProducts(data) {
         infoRoute.appendChild(info)
         infoRoute.appendChild(route)
     }
-
-
 }
 
 function loadDetails(product) {

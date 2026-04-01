@@ -89,9 +89,9 @@ $products = [
     ],
     [
         "id" => 6,
-        "name" => "Appelsap 1L",
+        "name" => "AH Appelsap 1L",
         "category" => "Drinken",
-        "price" => "1.15",
+        "price" => "1.69",
         "stock" => 30,
         "delivery" => "17-3-2026",
         "ingredients" => "• 100% Appelsap uit concentraat <br>•  Vet=> 2.9g  <br>• Suiker=> 60g",
@@ -101,9 +101,9 @@ $products = [
     // Vis & Kip
     [
         "id" => 7,
-        "name" => "AH Kipfilet 400g",
+        "name" => "AH Kipfilet 600g",
         "category" => "Vis & Kip",
-        "price" => "5.50",
+        "price" => "8.99",
         "stock" => 6,
         "delivery" => "17-3-2026",
         "ingredients" => "• Energie=> 212 kcal<br>• Vet=> 10.5g <br>• Verzadigd Vet=> 6.9g  <br>• Eiwitten=> 22g",
@@ -111,9 +111,9 @@ $products = [
     ],
     [
         "id" => 8,
-        "name" => "Diepvries Zalm",
+        "name" => "AH Wilde Zalmfilets",
         "category" => "Vis & Kip",
-        "price" => "7.95",
+        "price" => "7.49",
         "stock" => 4,
         "delivery" => "18-3-2026",
         "ingredients" => "• Energie=> 100 kcal<br>• Vet=> 1.5g <br>• Verzadigd Vet=> 1g  <br>• Eiwitten=> 30.5g",
@@ -123,9 +123,9 @@ $products = [
     // Fruit & Groente
     [
         "id" => 9,
-        "name" => "Bananen (tros)",
+        "name" => "Bananen tros",
         "category" => "Fruit & Groente",
-        "price" => "1.69",
+        "price" => "1.45",
         "stock" => 25,
         "delivery" => "17-3-2026",
         "ingredients" => "• Energie=> 47 kcal<br>• Vet=> 1.5g <br>• Eiwitten=> 30.5g",
@@ -135,7 +135,7 @@ $products = [
         "id" => 10,
         "name" => "Komkommer",
         "category" => "Fruit & Groente",
-        "price" => "0.79",
+        "price" => "0.85",
         "stock" => 40,
         "delivery" => "17-3-2026",
         "ingredients" => "• Energie=> 47 kcal<br>• Vet=> 1.5g <br>• Eiwitten=> 30.5g",
@@ -154,9 +154,9 @@ $products = [
     ],
     [
         "id" => 12,
-        "name" => "Ibuprofen 400mg",
+        "name" => "AH Ibuprofen 400mg",
         "category" => "Medicijnen",
-        "price" => "2.25",
+        "price" => "2.49",
         "stock" => 8,
         "delivery" => "20-3-2026",
         "ingredients" => "• Nicotine=> 200mg ",
@@ -165,9 +165,9 @@ $products = [
 
     [
         "id" => 13,
-        "name" => "De Zaanse Hoeve Halfvolle melk",
+        "name" => "AH Halfvolle melk",
         "category" => "Melk & Yoghurt",
-        "price" => "1.09",
+        "price" => "1.69",
         "stock" => 5,
         "delivery" => "17-3-2026",
         "ingredients" => "• Energie=> 47 kcal<br>• Vet=> 1.5g",
