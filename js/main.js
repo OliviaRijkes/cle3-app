@@ -9,7 +9,7 @@ window.addEventListener('load', init)
 
 function init() {
     fetchStuff('http://cle3-app.test/webservice/', loadProducts)
-    products = document.getElementById('products')
+    products = document.querySelector('#product-list')
     products.addEventListener('click', productClickHandler)
 
 }
@@ -48,14 +48,15 @@ function loadProducts(data) {
     for (const product of data) {
         console.log(product)
 
-
         //fill the products
         const article = document.createElement('article')
-        const img = document.createElement('img')
+        const productImage = document.createElement('div')
         const namePrice = document.createElement('div')
         const infoRoute = document.createElement('div')
+        productImage.id = "product-image"
         namePrice.id = "name-price"
         infoRoute.id = "info-route"
+        const img = document.createElement('img')
         const name = document.createElement('h2')
         const price = document.createElement('strong')
         const info = document.createElement('button')
@@ -72,9 +73,10 @@ function loadProducts(data) {
         route.dataset.category = product.category
 
         products.appendChild(article)
-        article.appendChild(img)
+        article.appendChild(productImage)
         article.appendChild(namePrice)
         article.appendChild(infoRoute)
+        productImage.appendChild(img)
         namePrice.appendChild(name)
         namePrice.appendChild(price)
         infoRoute.appendChild(info)
