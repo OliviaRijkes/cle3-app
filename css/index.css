@@ -63,4 +63,9 @@ nav {
         flex-direction: column;
         gap: 0.3vh;
     }
+
+    .navigation img {
+        height: 8vh;
+        width: 12vw;
+    }
 }
