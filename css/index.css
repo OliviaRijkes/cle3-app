@@ -3,11 +3,17 @@
     margin: 0;
     padding: 0;
 }
-
+:root {
+    --first-dark: #283044;
+    --second-blue: #78a1bb;
+    --third-mint: #Ebf5ee;
+    --fourth-beige: #bfa89e;
+    --fifth-taupe: #8b786d;
+}
 body {
     font-family: Ebrima;
     margin: 0;
-    background-color: lightblue;
+    background-color: var(--second-blue);
 }
 
 main {
@@ -42,7 +48,7 @@ nav {
 .navigation a:hover {
     border: 2px solid gray;
     border-radius: 20px;
-    background-color: lightblue;
+    background-color: var(--second-blue);
     color: white;
     padding: 5px;
 }

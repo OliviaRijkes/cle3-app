@@ -4,9 +4,17 @@
     padding: 0;
 }
 
+:root {
+    --first-dark: #283044;
+    --second-blue: #78a1bb;
+    --third-mint: #Ebf5ee;
+    --fourth-beige: #bfa89e;
+    --fifth-taupe: #8b786d;
+}
+
 body {
     margin: 0;
-    background-color: lightblue;
+    background-color: var(--second-blue);
 }
 
 main {
@@ -42,7 +50,7 @@ nav {
 .navigation a:hover {
     border: 2px solid gray;
     border-radius: 20px;
-    background-color: lightblue;
+    background-color: var(--second-blue);
     color: white;
     padding: 5px;
 }
@@ -84,16 +92,17 @@ h1 {
     article {
         display: flex;
         background-color: white;
-        max-width: 400px;
-        margin: 3vh 5vw;
+        width: 85%;
+        margin: 2vw 4vw;
         padding: 20px;
         border: 2px solid #eee;
         border-radius: 15px;
 
         #product-image {
+            width: 30%;
 
             img {
-                width: 20vw;
+                width: 100%;
             }
         }
     }
@@ -105,6 +114,7 @@ h1 {
         flex-direction: column;
         justify-content: center;
         gap: 0.8vh;
+        width: 50%;
         padding-left: 5vw;
         padding-right: 10vw;
 
@@ -123,6 +133,7 @@ h1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 20%;
         gap: 10px;
 
 
@@ -133,10 +144,10 @@ h1 {
             border-radius: 10px;
             font-size: 0.8rem;
             cursor: pointer;
-            padding: 0.7vh 7vw;
+            padding: 30%;
         }
 
-        #info:hover, #route:hover{
+        #info:hover, #route:hover {
 
         }
     }
