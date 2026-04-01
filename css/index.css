@@ -79,18 +79,44 @@ nav {
 
     header .imgContainer {
         display: flex;
-        gap: 20vw;
+        gap: 10vw;
     }
 
     header img {
-        height: 30vh;
-        width: 30vw;
+        height: 40vw;
+        width: 40vw;
         border: 2px solid black;
         border-radius: 10px;
     }
 
     main {
         padding: 0 5vw;
+    }
+
+    section h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .columnContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        padding: 4vh 0;
+    }
+
+    .rowContainer {
+        display: flex;
+        gap: 10vw;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rowContainer img {
+        height: 40vw;
+        width: 40vw;
+        border: 2px solid black;
+        border-radius: 10px;
     }
 
     footer {
@@ -131,4 +157,6 @@ nav {
         justify-content: center;
         margin-top: 4vh;
     }
+
+
 }
