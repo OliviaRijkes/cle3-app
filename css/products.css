@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: lightblue;
+}
+
+main {
+    display: flex;
+}
+
+nav {
+    background-color: white;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 16vw;
+    padding-bottom: 3vh;
+
+    a {
+        margin-top: 3.5vh;
+        font-size: 1.2rem;
+        font-family: Ebrima;
+        text-decoration: none;
+        color: #26313A;
+        transition: all 0.2s ease;
+        padding: 5px;
+        border: 2px solid transparent;
+        border-radius: 20px;
+    }
+
+    a:hover {
+        border: 2px solid gray;
+        border-radius: 20px;
+        background-color: lightblue;
+        color: white;
+        padding: 5px;
+    }
+
+    img {
+        margin-top: 2.7vh;
+        height: 5vh;
+        width: 5vw;
+    }
+}
+
+
+.products-map {
+    margin-top: 5vh;
+}
+
+
+h1 {
+    font-size: 1.15rem;
+    margin-bottom: 2vh;
+
+}
+
+.product-search input {
+    margin: 0 3vw;
+    border-radius: 20px;
+    width: 90vw;
+    height: 4vh;
+    padding-left: 15px;
+}
+
+.product-list {
+    display: flex;
+    background-color: white;
+    max-width: 400px;
+    margin: 3vh 5vw;
+    padding: 20px;
+    border: 2px solid #eee;
+    border-radius: 15px;
+}
+
+
+#product-image img {
+    height: 8vh;
+    width: 12vw;
+}
+
+
+#name-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8vh;
+    padding-left: 5vw;
+    padding-right: 10vw;
+}
+
+#name-price h2 {
+    font-size: 1.5rem;
+}
+
+#name-price strong {
+    font-size: 1.3rem;
+}
+
+#info-route {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+#info {
+    background-color: #f2f2f2;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0.7vh 7vw;
+}
+
+#info :hover {
+
+}
+
+#route {
+    background-color: #f2f2f2;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0.7vh 7vw;
+}
+
+#route :hover {
+
+}
+
+
+/*.navigation button {*/
+/*    height: 8vh;*/
+/*    width: 25vw;*/
+/*}*/
+
+@media (max-width: 480px) {
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3vh;
+        text-align: center;
+    }
+
+    .navigation img {
+        margin-left: 44vw;
+        height: 8vh;
+        width: 12vw;
+    }
+
+    h1 {
+        max-width: 440px;
+        margin-left: 3vw;
+    }
+
+
+}

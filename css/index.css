@@ -9,6 +9,10 @@ body {
     background-color: lightblue;
 }
 
+main {
+    display: flex;
+}
+
 nav {
     background-color: white;
 }
@@ -46,8 +50,10 @@ nav {
     }
 }
 
+@media (max-width: 480px) {
 
-/*.navigation button {*/
-/*    height: 8vh;*/
-/*    width: 25vw;*/
-/*}*/
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+}
