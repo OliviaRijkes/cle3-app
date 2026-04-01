@@ -41,7 +41,7 @@ $products = [
         "stock" => 12,
         "delivery" => "18-3-2026",
         "ingredients" => "• Energie=> 268 kcal<br>• Vet=> 8.5g <br>• Verzadigd Vet=> 4.9g  <br>• Eiwitten=> 56g",
-        "image" => "🍝"
+        "image" => "AH Penne Rigate.jpg"
     ],
     [
         "id" => 2,
@@ -51,7 +51,7 @@ $products = [
         "stock" => 8,
         "delivery" => "17-3-2026",
         "ingredients" => "• Energie=> 152 kcal<br>• Vet=> 10.5g <br>• Verzadigd Vet=> 6.9g  <br>• Eiwitten=> 42g",
-        "image" => "🍚"
+        "image" => "Lassie Toverrijst.jpg"
     ],
 
     // Snacks
@@ -63,7 +63,7 @@ $products = [
         "stock" => 20,
         "delivery" => "17-3-2026",
         "ingredients" => "• Energie=> 212 kcal<br>• Vet=> 10.5g <br>• Verzadigd Vet=> 6.9g  <br>• Eiwitten=> 22g <br> • Aardappelen<br>• Plantaardige oliën<br>• Zout",
-        "image" => "🥔"
+        "image" => "Lays Naturel Chips.jpg"
     ],
     [
         "id" => 4,
@@ -73,7 +73,7 @@ $products = [
         "stock" => 15,
         "delivery" => "19-3-2026",
         "ingredients" => "• Energie=> 212 kcal<br>• Vet=> 10.5g <br>• Verzadigd Vet=> 6.9g  <br>• Eiwitten=> 22g <br> • Pinda's<br>• Zetmeel<br>• Kruidenmix",
-        "image" => "🥜"
+        "image" => "AH Borrelnootjes.jpg"
     ],
 
     // Drinken
@@ -85,7 +85,7 @@ $products = [
         "stock" => 50,
         "delivery" => "17-3-2026",
         "ingredients" => "•  Vet=> 3.9g  <br>• Suiker=> 80g <br>• Cafeïne",
-        "image" => "🥤"
+        "image" => "Coca-Cola Original.jpg"
     ],
     [
         "id" => 6,
@@ -95,7 +95,7 @@ $products = [
         "stock" => 30,
         "delivery" => "17-3-2026",
         "ingredients" => "• 100% Appelsap uit concentraat <br>•  Vet=> 2.9g  <br>• Suiker=> 60g",
-        "image" => "🧃"
+        "image" => "AH Appelsap 1L.jpg"
     ],
 
     // Vis & Kip
@@ -107,7 +107,7 @@ $products = [
         "stock" => 6,
         "delivery" => "17-3-2026",
         "ingredients" => "• Energie=> 212 kcal<br>• Vet=> 10.5g <br>• Verzadigd Vet=> 6.9g  <br>• Eiwitten=> 22g",
-        "image" => "🍗"
+        "image" => "AH kipfilet 600g.jpg"
     ],
     [
         "id" => 8,
@@ -117,7 +117,7 @@ $products = [
         "stock" => 4,
         "delivery" => "18-3-2026",
         "ingredients" => "• Energie=> 100 kcal<br>• Vet=> 1.5g <br>• Verzadigd Vet=> 1g  <br>• Eiwitten=> 30.5g",
-        "image" => "🐟"
+        "image" => "AH Wilde Zalmfilets.jpg"
     ],
 
     // Fruit & Groente
@@ -129,7 +129,7 @@ $products = [
         "stock" => 25,
         "delivery" => "17-3-2026",
         "ingredients" => "• Energie=> 47 kcal<br>• Vet=> 1.5g <br>• Eiwitten=> 30.5g",
-        "image" => "🍌"
+        "image" => "Bananen tros.jpg"
     ],
     [
         "id" => 10,
@@ -139,7 +139,7 @@ $products = [
         "stock" => 40,
         "delivery" => "17-3-2026",
         "ingredients" => "• Energie=> 47 kcal<br>• Vet=> 1.5g <br>• Eiwitten=> 30.5g",
-        "image" => "🥒"
+        "image" => "Komkommer.jpg"
     ],
 
     [
@@ -150,7 +150,7 @@ $products = [
         "stock" => 10,
         "delivery" => "17-3-2026",
         "ingredients" => "• Nicotine=> 200mg",
-        "image" => "💊"
+        "image" => "AH Paracetamol 500mg.jpg"
     ],
     [
         "id" => 12,
@@ -160,7 +160,7 @@ $products = [
         "stock" => 8,
         "delivery" => "20-3-2026",
         "ingredients" => "• Nicotine=> 200mg ",
-        "image" => "💊"
+        "image" => "AH Ibuprofen 400mg.jpg"
     ],
 
     [
@@ -171,7 +171,7 @@ $products = [
         "stock" => 5,
         "delivery" => "17-3-2026",
         "ingredients" => "• Energie=> 47 kcal<br>• Vet=> 1.5g",
-        "image" => "🥛"
+        "image" => "AH Halfvolle melk.jpg"
     ],
     [
         "id" => 14,
@@ -181,47 +181,47 @@ $products = [
         "stock" => 12,
         "delivery" => "17-3-2026",
         "ingredients" => "• Energie=> 47 kcal<br>• Vet=> 1.5g",
-        "image" => "🥣"
+        "image" => "Griekse Yoghurt.jpg"
     ],
     [
         "id" => 15,
         "name" => "AH Rundergehakt 500g",
         "category" => "Vlees",
-        "price" => "4.85",
+        "price" => "5.87",
         "stock" => 10,
         "delivery" => "17-3-2026",
         "ingredients" => "• 100% Rundvlees",
-        "image" => "🥩"
+        "image" => "AH Rundergehakt 500g.jpg"
     ],
     [
         "id" => 16,
-        "name" => "AH Spekreepjes",
+        "name" => "AH Spekreepjes gerookt",
         "category" => "Vlees",
-        "price" => "2.95",
+        "price" => "4.99",
         "stock" => 14,
         "delivery" => "18-3-2026",
         "ingredients" => "• Varkensvlees<br>• Zout",
-        "image" => "🥓"
+        "image" => "AH Spekreepjes gerookt.jpg"
     ],
     [
         "id" => 17,
-        "name" => "AH Roomijs Vanille",
+        "name" => "AH Roomijs vanille",
         "category" => "Ijs",
-        "price" => "2.49",
+        "price" => "2.79",
         "stock" => 15,
         "delivery" => "17-3-2026",
         "ingredients" => "• Slagroom<br>• Melk<br>• Vanille-aroma",
-        "image" => "🍦"
+        "image" => "AH Roomijs vanille.jpg"
     ],
     [
         "id" => 18,
-        "name" => "Magnum Almond (3-pack)",
+        "name" => "Magnum Almond",
         "category" => "Ijs",
-        "price" => "4.15",
+        "price" => "6.99",
         "stock" => 8,
         "delivery" => "18-3-2026",
         "ingredients" => "• Melkchocolade<br>• Amandelen<br>• Vanille-ijs",
-        "image" => "🍦"
+        "image" => "Magnum Almond.jpg"
     ]
 ];
 /**
