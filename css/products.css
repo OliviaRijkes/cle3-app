@@ -22,7 +22,7 @@ main {
 }
 
 nav {
-    background-color: white;
+    background-color: var(--third-mint);
 }
 
 .navigation {
@@ -242,7 +242,7 @@ h1 {
     }
 
     footer {
-        background-color: white;
+        background-color: var(--third-mint);
         display: flex;
         flex-direction: column;
         align-items: center;
