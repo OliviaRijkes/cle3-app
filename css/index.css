@@ -20,40 +20,47 @@ nav {
 .navigation {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 16vw;
     padding-bottom: 3vh;
-
-    a {
-        margin-top: 3.5vh;
-        font-size: 1.2rem;
-        font-family: Ebrima;
-        text-decoration: none;
-        color: #26313A;
-        transition: all 0.2s ease;
-        padding: 5px;
-        border: 2px solid transparent;
-        border-radius: 20px;
-    }
-
-    a:hover {
-        border: 2px solid gray;
-        border-radius: 20px;
-        background-color: lightblue;
-        color: white;
-        padding: 5px;
-    }
-
-    img {
-        margin-top: 2.7vh;
-        height: 5vh;
-        width: 5vw;
-    }
 }
 
-@media (max-width: 480px) {
+.navigation a {
+    margin-top: 3.5vh;
+    font-size: 1.2rem;
+    font-family: Ebrima;
+    text-decoration: none;
+    color: #26313A;
+    transition: all 0.2s ease;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
 
+.navigation a:hover {
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color: lightblue;
+    color: white;
+    padding: 5px;
+}
+
+.navigation img {
+    margin-top: 2.7vh;
+    height: 5vh;
+    width: 5vw;
+}
+
+.navigation .searchIcon {
+    font-size: 2rem;
+}
+
+
+@media (max-width: 480px) {
     .navigation {
-        display: flex;
         flex-direction: column;
+        gap: 0.3vh;
     }
 }
