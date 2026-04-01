@@ -15,16 +15,16 @@ foreach ($intersectionLocationsRaw["leftToRight"] as $xDirection) {
 // location as: [x,y]
 
 //these change when you enter (into the radius of) the intersectionPosition (changelocation)
-$lookDirection = "up";
-$location = [3,5];
+//$lookDirection = "up";
+//$location = [3,5];
 
 //these change by changes on the app (changeGoal)
-$goal = [1,5];
+//$goal = [1,5];
 
 //these happen when there is changelocation or changeGoal
 //first go up than go left, afterward it gives left or right for the product position
-$goUp = $location[1]-$endLocation[1];
-$goLeft = $location[0]-$endLocation[0];
+//$goUp = $location[1]-$goal[1];
+//$goLeft = $location[0]-$goal[0];
 
 //if $goUp = negative -> go up in (left,right,forward) based of $lookDirection
 //                      else down in (left,right,forward) based of $lookDirection
@@ -32,7 +32,7 @@ $goLeft = $location[0]-$endLocation[0];
 //                      else left in (left,right,forward) based of $lookDirection
 
 
-const products = [
+$products = [
     [
         "id" => 1,
         "name" => "AH Penne Rigate",
@@ -224,6 +224,24 @@ const products = [
         "image" => "🍦"
     ]
 ];
+/**
+ * @return array
+ */
+function getProducts(): array
+{
+    global $products;
+    return $products;
+
+}
+/**
+ * @param $id
+ * @return array|false
+ */
+function getProductDetails($id): array|false
+{
+    global $products;
+    return $products;
+}
 
 
 
