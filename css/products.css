@@ -172,6 +172,8 @@ h1 {
     }
 
     h1 {
+        font-family: Ebrima;
+
         max-width: 440px;
         margin-left: 3vw;
     }
@@ -215,4 +217,7 @@ h1 {
         margin-top: 4vh;
     }
 
+    footer {
+        font-family: Ebrima;
+    }
 }
