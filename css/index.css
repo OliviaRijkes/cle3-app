@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: Ebrima;
     margin: 0;
     background-color: lightblue;
 }
@@ -28,7 +29,6 @@ nav {
 .navigation a {
     margin-top: 3.5vh;
     font-size: 1.2rem;
-    font-family: Ebrima;
     text-decoration: none;
     color: #26313A;
     transition: all 0.2s ease;
@@ -67,6 +67,30 @@ nav {
     .navigation img {
         height: 8vh;
         width: 12vw;
+    }
+
+    header {
+        padding: 5vh 5vw;
+        gap: 4vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .imgContainer {
+        display: flex;
+        gap: 20vw;
+    }
+
+    header img {
+        height: 30vh;
+        width: 30vw;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    main {
+        padding: 0 5vw;
     }
 
     footer {
