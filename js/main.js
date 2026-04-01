@@ -114,8 +114,6 @@ function loadDetails(product) {
 
     detailModal.showModal();
     body.classList.add('dialog-open');
-
-
 }
 
 //if the user hits an intersection
