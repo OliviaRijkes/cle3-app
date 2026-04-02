@@ -110,27 +110,27 @@ function loadDetails(data) {
 
 
     const productName = data.name;
-    // const productCategory = data.dataset.category;
+    // const productCategory = data.category;
 
     // const category = data.productCategory
     // if (category === "Pasta & Rijst") {
-    //     playerCard.classList.add('');
+    //     .classList.add('');
     // } else if (category === "Snacks") {
-    //     playerCard.classList.add('');
+    //     .classList.add('');
     // } else if (category === "Drinken") {
-    //     playerCard.classList.add('')
+    //     .classList.add('')
     // } else if (category === "Vis & Kip") {
-    //     playerCard.classList.add('')
+    //     .classList.add('')
     // } else if (category === "Fruit & Groente") {
-    //     playerCard.classList.add('')
+    //     .classList.add('')
     // } else if (category === "Medicijnen") {
-    //     playerCard.classList.add('')
+    //     .classList.add('')
     // } else if (category === "Melk & Yoghurt") {
-    //     playerCard.classList.add('')
+    //     .classList.add('')
     // } else if (category === "Vlees") {
-    //     playerCard.classList.add('')
+    //     .classList.add('')
     // } else if (category === "Ijs") {
-    //     playerCard.classList.add('')
+    //     .classList.add('')
 
     detailContent.textContent = '';
 
@@ -144,11 +144,13 @@ function loadDetails(data) {
 
     if (data.stock > 0) {
         const stockProduct = document.createElement('p');
-        stockProduct.innerHTML = `• ${data.stock} stuks op voorraad`
-        detailContent.appendChild(stockProduct);
+        stockProduct.innerHTML = `• ${data.stock} stuks op voorraad`;
+        stockProduct.classList.add('');
+        stockProduct.detailContent.appendChild(stockProduct);
     } else {
         const nextDelivery = document.createElement('p');
         nextDelivery.innerHTML = ` • voorraad is momenteel leeg, het wordt bijgevuld op ${data.delivery}`
+        stockProduct.classList.add('');
         detailContent.appendChild(nextDelivery);
     }
 
