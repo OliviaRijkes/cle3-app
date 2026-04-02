@@ -144,13 +144,13 @@ function loadDetails(data) {
 
     if (data.stock > 0) {
         const stockProduct = document.createElement('p');
-        stockProduct.innerHTML = `• ${data.stock} stuks op voorraad`;
-        stockProduct.classList.add('');
-        stockProduct.detailContent.appendChild(stockProduct);
+        stockProduct.innerHTML = `${data.stock} stuks op voorraad`;
+        stockProduct.classList.add('stock-button');
+        detailContent.appendChild(stockProduct);
     } else {
         const nextDelivery = document.createElement('p');
-        nextDelivery.innerHTML = ` • voorraad is momenteel leeg, het wordt bijgevuld op ${data.delivery}`
-        stockProduct.classList.add('');
+        nextDelivery.innerHTML = ` Niet op voorraad. Leverbaar vanaf ${data.delivery}.`
+        nextDelivery.classList.add('delivery-button');
         detailContent.appendChild(nextDelivery);
     }
 
