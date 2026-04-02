@@ -12,7 +12,7 @@ let detailContent;
 window.addEventListener('load', init)
 
 function init() {
-    fetchStuff('https://cle3-app.test/webservice/', loadProducts);
+    fetchStuff('http://cle3-app.test/webservice/', loadProducts);
 
     body = document.querySelector('body');
     detailModal = document.querySelector('#product-detail');
@@ -51,7 +51,7 @@ function productClickHandler(e) {
     if (e.target.id === 'info') {
         // console.log(e.target.dataset.id)
         // console.log(`https://cle3-app.test/webservice/?id=${e.target.dataset.id}`)
-        fetchStuff(`https://cle3-app.test/webservice/?id=${e.target.dataset.id}`, loadDetails)
+        fetchStuff(`http://cle3-app.test/webservice/?id=${e.target.dataset.id}`, loadDetails)
     }
     if (e.target.id === 'goal') {
         goal = [e.target.dataset.x, e.target.dataset.y]
@@ -77,13 +77,13 @@ function loadProducts(data) {
         const info = document.createElement('button')
         const route = document.createElement('button')
         info.id = "info"
-        info.textContent = "info"
+        info.textContent = "Info"
         route.id = "route"
-        route.textContent = "route"
+        route.textContent = "Route"
 
         img.src = `images/${product.image}`
         name.textContent = product.name
-        price.textContent = product.price
+        price.textContent = `€ ${product.price}`
         route.dataset.category = product.category
         info.dataset.id = product.id
         info.dataset.name = product.name
