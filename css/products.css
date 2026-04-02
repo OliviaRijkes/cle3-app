@@ -22,7 +22,7 @@ main {
 }
 
 nav {
-    background-color: white;
+    background-color: var(--third-mint);
 }
 
 .navigation {
@@ -34,13 +34,13 @@ nav {
 }
 
 .navigation a {
-    margin-top: 3.5vh;
+    margin-top: 1.5vh;
     font-size: 1.2rem;
     font-family: Ebrima;
     text-decoration: none;
     color: #26313A;
     transition: all 0.2s ease;
-    padding: 5px;
+    padding: 3px;
     border: 2px solid transparent;
     border-radius: 20px;
     display: flex;
@@ -212,8 +212,8 @@ h1 {
     }
 
     .navigation img {
-        height: 8vh;
-        width: 12vw;
+        height: 22vh;
+        width: 15vw;
     }
 
     h1 {
@@ -224,7 +224,7 @@ h1 {
     }
 
     footer {
-        background-color: white;
+        background-color: var(--third-mint);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -241,8 +241,8 @@ h1 {
     }
 
     footer img {
-        width: 5.5vw;
-        height: auto;
+        height: 22vh;
+        width: 15vw;
 
     }
 
