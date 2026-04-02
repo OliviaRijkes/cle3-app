@@ -22,21 +22,17 @@ main {
     display: flex;
 }
 
-nav {
-    background-color: var(--third-mint);
-}
-
 .navigation {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16vw;
-    padding-bottom: 3vh;
+    gap: 9vw;
+    /*height: 20vh;*/
 }
 
 .navigation a {
-    margin-top: 1.5vh;
     font-size: 1.2rem;
+    font-family: Ebrima;
     text-decoration: none;
     color: #26313A;
     transition: all 0.2s ease;
@@ -56,9 +52,8 @@ nav {
 }
 
 .navigation img {
-    margin-top: 2.7vh;
-    height: 5vh;
-    width: 5vw;
+    height: 22vh;
+    width: 15vw;
 }
 
 .navigation .searchIcon {
@@ -67,15 +62,6 @@ nav {
 
 
 @media (max-width: 480px) {
-    .navigation {
-        flex-direction: column;
-        gap: 0.3vh;
-    }
-
-    .navigation img {
-        height: 22vh;
-        width: 15vw;
-    }
 
     header {
         background-color: var(--fourth-beige);

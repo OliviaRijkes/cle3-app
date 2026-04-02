@@ -29,12 +29,11 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16vw;
-    padding-bottom: 3vh;
+    gap: 9vw;
+    /*height: 20vh;*/
 }
 
 .navigation a {
-    margin-top: 1.5vh;
     font-size: 1.2rem;
     font-family: Ebrima;
     text-decoration: none;
@@ -55,16 +54,15 @@ nav {
     padding: 5px;
 }
 
+
 .navigation img {
-    margin-top: 2.7vh;
-    height: 5vh;
-    width: 5vw;
+    height: 22vh;
+    width: 15vw;
 }
 
 .navigation .searchIcon {
     font-size: 2rem;
 }
-
 
 .products-map {
     margin-top: 5vh;
@@ -206,19 +204,8 @@ h1 {
 
 @media (max-width: 480px) {
 
-    .navigation {
-        flex-direction: column;
-        gap: 0.3vh;
-    }
-
-    .navigation img {
-        height: 22vh;
-        width: 15vw;
-    }
-
     h1 {
         font-family: Ebrima;
-
         max-width: 440px;
         margin-left: 3vw;
     }
