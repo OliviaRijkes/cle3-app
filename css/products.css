@@ -162,14 +162,13 @@ h1 {
     border-radius: 16px;
     padding: 0px;
     box-shadow: 0 16px 22px 0 rgba(0, 0, 0, 0.6);
-    width: 90vw;
-    max-width: 400px;
+    width: 80vw;
     overflow: hidden;
 }
 
 .modal[open] {
     opacity: 1;
-    transition-delay: 0s;
+    transition-delay: 1s;
 }
 
 .modal::backdrop {
@@ -181,46 +180,29 @@ h1 {
     position: absolute;
     top: 5px;
     right: 5px;
-    outline: none;
-    appearance: none;
-    color: goldenrod;
     background: none;
     border: 0;
     font-weight: bold;
     font-size: 22px;
-    cursor: pointer;
 }
 
 .modal-content h1 {
     margin: 0;
     padding: 20px;
-    background-color: orange;
-    color: white;
-    text-transform: capitalize;
+    color: black;
+    font-family: Ebrima;
 }
-
-/*.modal-content h2 {*/
-/*    margin: 1.5vh 0 1.5vh 1.3vw;*/
-/*}*/
 
 .modal-content p {
-    font-size: 1rem;
-    margin: 1.3vh 0 0.7vh 1vw;
-
+    font-size: 1.1rem;
+    margin: 1.3vh 0 5vh 10vw;
+    line-height: 1.8;
 }
 
-.modal-content img {
-    width: 100%;
-    height: 300px;
-    object-fit: contain;
-
-}
-
-
-/*.navigation button {*/
-/*    height: 8vh;*/
-/*    width: 25vw;*/
+/*.modal-content img {*/
+/*    object-fit: contain;*/
 /*}*/
+
 
 @media (max-width: 480px) {
 

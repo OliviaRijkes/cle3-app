@@ -6,6 +6,7 @@ require_once "actions.php";
 if (!isset($_GET['id'])) {
     $data = getProducts();
 } else {
+//    print_r($_GET['id']);
     $data = getProductDetails($_GET['id']);
 }
 

@@ -1,10 +1,10 @@
 <?php
 $intersectionLocationsRaw = [
     "leftToRight" => [
-        1,2,3
+        1, 2, 3
     ],
-    "upToDown" =>[
-        1,2,3,4,5
+    "upToDown" => [
+        1, 2, 3, 4, 5
     ]
 ];
 
@@ -40,7 +40,7 @@ $products = [
         "price" => "1.25",
         "stock" => 12,
         "delivery" => "18-3-2026",
-        "ingredients" => "• Energie=> 268 kcal<br>• Vet=> 8.5g <br>• Verzadigd Vet=> 4.9g  <br>• Eiwitten=> 56g",
+        "ingredients" => "• Energie: 268 kcal<br>• Vet: 8.5g <br>• Verzadigd Vet: 4.9g  <br>• Eiwitten: 56g",
         "image" => "AH Penne Rigate.jpg"
     ],
     [
@@ -48,9 +48,9 @@ $products = [
         "name" => "Lassie Toverrijst",
         "category" => "Pasta & Rijst",
         "price" => "2.10",
-        "stock" => 8,
+        "stock" => 0,
         "delivery" => "17-3-2026",
-        "ingredients" => "• Energie=> 152 kcal<br>• Vet=> 10.5g <br>• Verzadigd Vet=> 6.9g  <br>• Eiwitten=> 42g",
+        "ingredients" => "• Energie: 152 kcal<br>• Vet: 10.5g <br>• Verzadigd Vet: 6.9g  <br>• Eiwitten: 42g",
         "image" => "Lassie Toverrijst.jpg"
     ],
 
@@ -62,7 +62,7 @@ $products = [
         "price" => "1.89",
         "stock" => 20,
         "delivery" => "17-3-2026",
-        "ingredients" => "• Energie=> 212 kcal<br>• Vet=> 10.5g <br>• Verzadigd Vet=> 6.9g  <br>• Eiwitten=> 22g <br> • Aardappelen<br>• Plantaardige oliën<br>• Zout",
+        "ingredients" => "• Energie: 212 kcal<br>• Vet: 10.5g <br>• Verzadigd Vet: 6.9g  <br>• Eiwitten: 22g <br> • Aardappelen<br>• Plantaardige oliën<br>• Zout",
         "image" => "Lays Naturel Chips.jpg"
     ],
     [
@@ -72,7 +72,7 @@ $products = [
         "price" => "1.45",
         "stock" => 15,
         "delivery" => "19-3-2026",
-        "ingredients" => "• Energie=> 212 kcal<br>• Vet=> 10.5g <br>• Verzadigd Vet=> 6.9g  <br>• Eiwitten=> 22g <br> • Pinda's<br>• Zetmeel<br>• Kruidenmix",
+        "ingredients" => "• Energie: 212 kcal<br>• Vet: 10.5g <br>• Verzadigd Vet: 6.9g  <br>• Eiwitten: 22g <br> • Pinda's<br>• Zetmeel<br>• Kruidenmix",
         "image" => "AH Borrelnootjes.jpg"
     ],
 
@@ -84,7 +84,7 @@ $products = [
         "price" => "2.49",
         "stock" => 50,
         "delivery" => "17-3-2026",
-        "ingredients" => "•  Vet=> 3.9g  <br>• Suiker=> 80g <br>• Cafeïne",
+        "ingredients" => "•  Vet: 3.9g  <br>• Suiker: 80g <br>• Cafeïne",
         "image" => "Coca-Cola Original.jpg"
     ],
     [
@@ -94,7 +94,7 @@ $products = [
         "price" => "1.69",
         "stock" => 30,
         "delivery" => "17-3-2026",
-        "ingredients" => "• 100% Appelsap uit concentraat <br>•  Vet=> 2.9g  <br>• Suiker=> 60g",
+        "ingredients" => "• 100% Appelsap uit concentraat <br>•  Vet: 2.9g  <br>• Suiker: 60g",
         "image" => "AH Appelsap 1L.jpg"
     ],
 
@@ -106,7 +106,7 @@ $products = [
         "price" => "8.99",
         "stock" => 6,
         "delivery" => "17-3-2026",
-        "ingredients" => "• Energie=> 212 kcal<br>• Vet=> 10.5g <br>• Verzadigd Vet=> 6.9g  <br>• Eiwitten=> 22g",
+        "ingredients" => "• Energie: 212 kcal<br>• Vet: 10.5g <br>• Verzadigd Vet: 6.9g  <br>• Eiwitten: 22g",
         "image" => "AH kipfilet 600g.jpg"
     ],
     [
@@ -116,7 +116,7 @@ $products = [
         "price" => "7.49",
         "stock" => 4,
         "delivery" => "18-3-2026",
-        "ingredients" => "• Energie=> 100 kcal<br>• Vet=> 1.5g <br>• Verzadigd Vet=> 1g  <br>• Eiwitten=> 30.5g",
+        "ingredients" => "• Energie: 100 kcal<br>• Vet: 1.5g <br>• Verzadigd Vet: 1g  <br>• Eiwitten: 30.5g",
         "image" => "AH Wilde Zalmfilets.jpg"
     ],
 
@@ -128,7 +128,7 @@ $products = [
         "price" => "1.45",
         "stock" => 25,
         "delivery" => "17-3-2026",
-        "ingredients" => "• Energie=> 47 kcal<br>• Vet=> 1.5g <br>• Eiwitten=> 30.5g",
+        "ingredients" => "• Energie: 47 kcal<br>• Vet: 1.5g <br>• Eiwitten: 30.5g",
         "image" => "Bananen tros.jpg"
     ],
     [
@@ -138,7 +138,7 @@ $products = [
         "price" => "0.85",
         "stock" => 40,
         "delivery" => "17-3-2026",
-        "ingredients" => "• Energie=> 47 kcal<br>• Vet=> 1.5g <br>• Eiwitten=> 30.5g",
+        "ingredients" => "• Energie: 47 kcal<br>• Vet: 1.5g <br>• Eiwitten: 30.5g",
         "image" => "Komkommer.jpg"
     ],
 
@@ -149,7 +149,7 @@ $products = [
         "price" => "1.59",
         "stock" => 10,
         "delivery" => "17-3-2026",
-        "ingredients" => "• Nicotine=> 200mg",
+        "ingredients" => "• Nicotine: 200mg",
         "image" => "AH Paracetamol 500mg.jpg"
     ],
     [
@@ -159,7 +159,7 @@ $products = [
         "price" => "2.49",
         "stock" => 8,
         "delivery" => "20-3-2026",
-        "ingredients" => "• Nicotine=> 200mg ",
+        "ingredients" => "• Nicotine: 200mg ",
         "image" => "AH Ibuprofen 400mg.jpg"
     ],
 
@@ -170,7 +170,7 @@ $products = [
         "price" => "1.69",
         "stock" => 5,
         "delivery" => "17-3-2026",
-        "ingredients" => "• Energie=> 47 kcal<br>• Vet=> 1.5g",
+        "ingredients" => "• Energie: 47 kcal<br>• Vet: 1.5g",
         "image" => "AH Halfvolle melk.jpg"
     ],
     [
@@ -179,8 +179,8 @@ $products = [
         "category" => "Melk & Yoghurt",
         "price" => "2.15",
         "stock" => 12,
-        "delivery" => "17-3-2026",
-        "ingredients" => "• Energie=> 47 kcal<br>• Vet=> 1.5g",
+        "delivery" => "• 17-3-2026",
+        "ingredients" => "• Energie: 47 kcal<br>• Vet: 1.5g",
         "image" => "Griekse Yoghurt.jpg"
     ],
     [
@@ -200,7 +200,7 @@ $products = [
         "price" => "4.99",
         "stock" => 14,
         "delivery" => "18-3-2026",
-        "ingredients" => "• Varkensvlees<br>• Zout",
+        "ingredients" => "• Varkensvlees <br>• Zout",
         "image" => "AH Spekreepjes gerookt.jpg"
     ],
     [
@@ -233,15 +233,35 @@ function getProducts(): array
     return $products;
 
 }
+
 /**
  * @param $id
  * @return array|false
  */
+
+//function getProductDetails($id): array|false
+//{
+//    global $products;
+//
+////    filter array
+//
+//    $product =
+//    return $product;
+//}
+
 function getProductDetails($id): array|false
 {
     global $products;
-    return $products;
+
+    foreach ($products as $product) {
+        if ($product['id'] == $id) {
+            return $product;
+        }
+    }
+
+    return false;
 }
+
 
 
 
