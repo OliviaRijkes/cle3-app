@@ -12,7 +12,7 @@ let productSearch;
 window.addEventListener('load', init)
 
 function init() {
-    fetchStuff('https://cle3-app.test/webservice/', loadProducts);
+    fetchStuff('http://cle3-app.test/webservice/', loadProducts);
 
     body = document.querySelector('body');
     detailModal = document.querySelector('#product-detail');
@@ -54,7 +54,7 @@ function productClickHandler(e) {
     if (e.target.id === 'info') {
         // console.log(e.target.dataset.id)
         // console.log(`https://cle3-app.test/webservice/?id=${e.target.dataset.id}`)
-        fetchStuff(`https://cle3-app.test/webservice/?id=${e.target.dataset.id}`, loadDetails)
+        fetchStuff(`http://cle3-app.test/webservice/?id=${e.target.dataset.id}`, loadDetails)
     }
     if (e.target.id === 'goal') {
         goal = [e.target.dataset.x, e.target.dataset.y]
@@ -77,6 +77,7 @@ function loadProducts(data) {
         const img = document.createElement('img')
         const name = document.createElement('h2')
         const price = document.createElement('strong')
+        const size = document.createElement('p')
         const info = document.createElement('button')
         const route = document.createElement('button')
         info.id = "info"
@@ -87,6 +88,7 @@ function loadProducts(data) {
 
         img.src = `images/${product.image}`
         name.textContent = product.name
+        size.textContent = product.size
         price.textContent = `€ ${product.price}`
         route.dataset.category = product.category
         info.dataset.id = product.id
@@ -99,6 +101,7 @@ function loadProducts(data) {
         article.appendChild(infoRoute)
         productImage.appendChild(img)
         namePrice.appendChild(name)
+        namePrice.appendChild(size)
         namePrice.appendChild(price)
         infoRoute.appendChild(info)
         infoRoute.appendChild(route)

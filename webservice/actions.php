@@ -36,6 +36,7 @@ $products = [
     [
         "id" => 1,
         "name" => "AH Penne Rigate",
+        "size" => "500g",
         "category" => "Pasta & Rijst",
         "price" => "1.25",
         "stock" => 12,
@@ -46,6 +47,7 @@ $products = [
     [
         "id" => 2,
         "name" => "Lassie Toverrijst",
+        "size" => "750g",
         "category" => "Pasta & Rijst",
         "price" => "2.10",
         "stock" => 0,
@@ -59,6 +61,7 @@ $products = [
         "id" => 3,
         "name" => "Lay's Naturel Chips",
         "category" => "Snacks",
+        "size" => "200g",
         "price" => "1.89",
         "stock" => 20,
         "delivery" => "17-3-2026",
@@ -68,6 +71,7 @@ $products = [
     [
         "id" => 4,
         "name" => "AH Borrelnootjes",
+        "size" => "500g",
         "category" => "Snacks",
         "price" => "1.45",
         "stock" => 15,
@@ -81,6 +85,7 @@ $products = [
         "id" => 5,
         "name" => "Coca-Cola Original",
         "category" => "Drinken",
+        "size" => "1L",
         "price" => "2.49",
         "stock" => 50,
         "delivery" => "17-3-2026",
@@ -89,7 +94,8 @@ $products = [
     ],
     [
         "id" => 6,
-        "name" => "AH Appelsap 1L",
+        "name" => "AH Appelsap",
+        "size" => "1L",
         "category" => "Drinken",
         "price" => "1.69",
         "stock" => 30,
@@ -101,7 +107,8 @@ $products = [
     // Vis & Kip
     [
         "id" => 7,
-        "name" => "AH Kipfilet 600g",
+        "name" => "AH Kipfilet",
+        "size" => "600g",
         "category" => "Vis & Kip",
         "price" => "8.99",
         "stock" => 6,
@@ -112,6 +119,7 @@ $products = [
     [
         "id" => 8,
         "name" => "AH Wilde Zalmfilets",
+        "size" => "675g",
         "category" => "Vis & Kip",
         "price" => "7.49",
         "stock" => 4,
@@ -123,7 +131,8 @@ $products = [
     // Fruit & Groente
     [
         "id" => 9,
-        "name" => "Bananen tros",
+        "name" => "Bananen",
+        "size" => "1 tros",
         "category" => "Fruit & Groente",
         "price" => "1.45",
         "stock" => 25,
@@ -134,6 +143,7 @@ $products = [
     [
         "id" => 10,
         "name" => "Komkommer",
+        "size" => "1 stuk",
         "category" => "Fruit & Groente",
         "price" => "0.85",
         "stock" => 40,
@@ -145,6 +155,7 @@ $products = [
     [
         "id" => 11,
         "name" => "AH Paracetamol 500mg",
+        "size" => "50 tabletten",
         "category" => "Medicijnen",
         "price" => "1.59",
         "stock" => 10,
@@ -155,6 +166,7 @@ $products = [
     [
         "id" => 12,
         "name" => "AH Ibuprofen 400mg",
+        "size" => "20 tabletten",
         "category" => "Medicijnen",
         "price" => "2.49",
         "stock" => 8,
@@ -166,6 +178,7 @@ $products = [
     [
         "id" => 13,
         "name" => "AH Halfvolle melk",
+        "size" => "1,5L",
         "category" => "Melk & Yoghurt",
         "price" => "1.69",
         "stock" => 5,
@@ -176,6 +189,7 @@ $products = [
     [
         "id" => 14,
         "name" => "Griekse Yoghurt",
+        "size" => "1kg",
         "category" => "Melk & Yoghurt",
         "price" => "2.15",
         "stock" => 12,
@@ -185,7 +199,8 @@ $products = [
     ],
     [
         "id" => 15,
-        "name" => "AH Rundergehakt 500g",
+        "name" => "AH Rundergehakt",
+        "size" => "500g",
         "category" => "Vlees",
         "price" => "5.87",
         "stock" => 10,
@@ -196,6 +211,7 @@ $products = [
     [
         "id" => 16,
         "name" => "AH Spekreepjes gerookt",
+        "size" => "250g",
         "category" => "Vlees",
         "price" => "4.99",
         "stock" => 14,
@@ -206,6 +222,7 @@ $products = [
     [
         "id" => 17,
         "name" => "AH Roomijs vanille",
+        "size" => "1L",
         "category" => "Ijs",
         "price" => "2.79",
         "stock" => 15,
@@ -216,6 +233,7 @@ $products = [
     [
         "id" => 18,
         "name" => "Magnum Almond",
+        "size" => "6 stuks",
         "category" => "Ijs",
         "price" => "6.99",
         "stock" => 8,
