@@ -81,6 +81,7 @@ function loadProducts(data) {
         route.id = "route"
         route.textContent = "Route"
 
+
         img.src = `images/${product.image}`
         name.textContent = product.name
         price.textContent = `€ ${product.price}`
@@ -98,6 +99,8 @@ function loadProducts(data) {
         namePrice.appendChild(price)
         infoRoute.appendChild(info)
         infoRoute.appendChild(route)
+
+
     }
 }
 
@@ -152,10 +155,12 @@ function loadDetails(data) {
         nextDelivery.innerHTML = ` Niet op voorraad. Leverbaar vanaf ${data.delivery}.`
         nextDelivery.classList.add('delivery-button');
         detailContent.appendChild(nextDelivery);
+
     }
 
     detailModal.showModal();
     body.classList.add('dialog-open');
+
 }
 
 //if the user hits an intersection
