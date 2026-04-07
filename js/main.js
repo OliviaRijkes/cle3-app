@@ -7,7 +7,7 @@ let products;
 let body;
 let detailModal;
 let detailContent;
-// let productSearch
+let productSearch;
 
 window.addEventListener('load', init)
 
@@ -24,6 +24,9 @@ function init() {
     detailModal.addEventListener('click', dialogClickHandler);
     detailModal.addEventListener('close', dialogCloseHandler);
 
+
+    productSearch = document.querySelector('#first-name');
+    productSearch.addEventListener('input', productFilter);
 
 }
 
@@ -98,6 +101,34 @@ function loadProducts(data) {
         namePrice.appendChild(price)
         infoRoute.appendChild(info)
         infoRoute.appendChild(route)
+    }
+}
+
+function productFilter() {
+
+    let input, filter, productList, articleproductList, h2, i, txtValue;
+    input = document.getElementById('first-name');
+    filter = input.value.toUpperCase();
+    productList = document.getElementById("product-list");
+    articleproductList = productList.getElementsByTagName('article');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < articleproductList.length; i++) {
+
+        h2 = articleproductList[i].getElementsByTagName("h2")[0];
+        txtValue = h2.textContent || h2.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            articleproductList[i].style.display = "";
+        } else {
+            articleproductList[i].style.display = "none";
+        }
+    }
+
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        const empty_input = document.createElement('p');
+        empty_input.textContent = `Helaas zijn er geen artikelen gevonden`
+        empty_input.classList.add('empty-message');
+        productList.appendChild(empty_input);
     }
 }
 

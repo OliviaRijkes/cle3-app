@@ -80,9 +80,17 @@ h1 {
     margin: 0 3vw;
     border-radius: 20px;
     width: 90vw;
-    height: 4vh;
+    height: 4.5vh;
     padding-left: 15px;
 }
+
+.empty-message {
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
+    margin: 0 10vw;
+}
+
 
 #product-list {
     display: flex;
@@ -146,9 +154,7 @@ h1 {
             padding: 30%;
         }
 
-        #info:hover, #route:hover {
 
-        }
     }
 }
 
