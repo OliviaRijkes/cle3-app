@@ -112,6 +112,11 @@ function productFilter() {
     productList = document.getElementById("product-list");
     articleproductList = productList.getElementsByTagName('article');
 
+    const Message = document.querySelector('.empty-message');
+    if (Message) {
+        Message.remove();
+    }
+    let productCheck = 0;
     // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < articleproductList.length; i++) {
 
@@ -119,12 +124,13 @@ function productFilter() {
         txtValue = h2.textContent || h2.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             articleproductList[i].style.display = "";
+            productCheck++;
         } else {
             articleproductList[i].style.display = "none";
         }
     }
 
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    if (productCheck === 0) {
         const empty_input = document.createElement('p');
         empty_input.textContent = `Helaas zijn er geen artikelen gevonden`
         empty_input.classList.add('empty-message');
