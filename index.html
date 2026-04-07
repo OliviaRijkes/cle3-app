@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Title</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/index.css">
     <script type="text/javascript" src="js/main.js" defer></script>
 </head>
@@ -14,41 +14,43 @@
              alt="Logo van het merk">
         <a href="index.html"> Home </a>
         <a href="">Producten</a>
-        <a href="info.html"> About Shoppi </a>
+        <a class="searchIcon" href="products.html">🔍</a>
     </div>
 </nav>
-<main>
-
-    <div class="products-map">
-
-        <h1> Hieronder kun je zoeken naar een product. Vervolgens zal de route richting het gekozen product worden
-            getoond.</h1>
-
-
-        <div class="product-search">
-            <input type="text" name="products" id="first-name" placeholder=" 🔍 Waar ben je naar op zoek?">
-        </div>
-        <div id="product-list"></div>
-
+<header>
+    <h1>Shoppi</h1>
+    <p>Maak kennis met Shoppi, dé innovatieve manier om te shoppen in jouw lokale supermarkt. Shoppi
+        is vastberaden om jouw dagelijkse supermarktervaring te verbeteren. Met ons baanbrekende SMART-object
+        navigeer je de winkel veel makkelijker. Gebruik het in combinatie met onze webdienst om de ervaring nóg
+        prettiger en gemakkelijker te maken. Zo kan iedereen de benodigde producten snel en zelfstandig vinden. Gewoon,
+        zoals het hoort! </p>
+    <div class="imgContainer">
+        <img src="images/shoppiSideImage.jpg" alt="">
+        <img src="images/shoppiTopImage.jpg" alt="">
     </div>
-
-
-    <!--    <section id="map-section">-->
-    <!--        <div class="map">-->
-
-    <!--        </div>-->
-    <!--        <div class="pin" id="location">📍</div>-->
-    <!--        <div class="user-location">-->
-    <!--            <p>U staat hier</p>-->
-    <!--        </div>-->
-    <!--    </section>-->
-
-
-    <dialog class="modal" id="product-detail">
-        <div class="modal-content"></div>
-        <button class="modal-close">❌</button>
-    </dialog>
-
+</header>
+<main>
+    <section>
+        <h2>Gebruiksaanwijzing</h2>
+        <div class="columnContainer">
+            <div class="rowContainer">
+                <p>Selecteer op de webdienst een product.</p>
+                <img src="images/Coca-Cola%20Original.jpg" alt="">
+            </div>
+            <div class="rowContainer">
+                <video src="video/pressingShoppingButton.mp4" type="video/mp4" autoplay muted loop></video>
+                <p>Schakel de Shoppi in.</p>
+            </div>
+            <div class="rowContainer">
+                <p>Volg de directie van de brandende lampen op de Shoppi.</p>
+                <img src="images/followTheLights.jpg" alt="">
+            </div>
+            <div class="rowContainer">
+                <img src="images/foundProductUsingShoppi.jpg" alt="">
+                <p>Je hebt nu een product in je handen, hierna kun je een nieuw product selecteren.</p>
+            </div>
+        </div>
+    </section>
 </main>
 <footer>
     <div class="footerColumnContainer">
