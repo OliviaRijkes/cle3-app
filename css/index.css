@@ -19,6 +19,7 @@ body {
 
 main {
     display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -158,6 +159,229 @@ h1 {
     }
 }
 
+.map {
+    margin: 5vh 5vw;
+    width: 90%;
+    height: 40vh;
+    background-color: lightgreen;
+    position: relative;
+
+    .dairy {
+        top: 0;
+        background-color: lightblue;
+        height: 13.5vh;
+        width: 7vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1.5px solid black;
+        border-bottom: 1.5px solid black;
+        position: absolute;
+    }
+
+    .dairy p {
+        rotate: 270deg;
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+    .bread-department {
+        bottom: 0;
+        margin-top: 13vh;
+        background-color: white;
+        height: 13.5vh;
+        width: 7vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 2px solid black;
+        border-top: 2px solid black;
+        position: absolute;
+    }
+
+    .bread-department p {
+        rotate: 270deg;
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+    .drinks {
+        margin-left: 18vw;
+        background-color: white;
+        height: 4vh;
+        width: 22vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        border-top: 0;
+        position: absolute;
+    }
+
+    .drinks p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+    .alcohol {
+        top: 8vh;
+        margin-left: 18vw;
+        background-color: white;
+        height: 4vh;
+        width: 22vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        position: absolute;
+    }
+
+    .alcohol p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+    .rice-pasta {
+        top: 16vh;
+        margin-left: 18vw;
+        background-color: white;
+        height: 4vh;
+        width: 22vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        position: absolute;
+    }
+
+    .rice-pasta p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+    .sanitary {
+        top: 24vh;
+        margin-left: 18vw;
+        background-color: white;
+        height: 4vh;
+        width: 22vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        position: absolute;
+    }
+
+    .sanitary p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+
+    .freezer {
+        margin-left: 44vw;
+        background-color: white;
+        height: 4vh;
+        width: 22vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        border-top: 0;
+        position: absolute;
+    }
+
+    .freezer p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+
+    .snacks {
+        top: 7vh;
+        margin-left: 44vw;
+        background-color: white;
+        height: 4vh;
+        width: 22vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        position: absolute;
+    }
+
+    .snacks p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+    .personal-care {
+        top: 14vh;
+        margin-left: 44vw;
+        background-color: white;
+        height: 4vh;
+        width: 22vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        position: absolute;
+    }
+
+    .personal-care {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+    .pet_care {
+        top: 21vh;
+        margin-left: 44vw;
+        background-color: white;
+        height: 4vh;
+        width: 22vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        position: absolute;
+    }
+
+    .pet_care p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+    .medicines {
+        top: 28vh;
+        margin-left: 44vw;
+        background-color: white;
+        height: 4vh;
+        width: 22vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        position: absolute;
+    }
+
+    .medicines p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+
+}
 
 .modal {
     opacity: 0;
