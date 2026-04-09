@@ -116,6 +116,11 @@ main {
         border-radius: 10px;
     }
 
+    main {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
     video {
         height: auto;
         width: 40vw;
@@ -168,6 +173,10 @@ main {
 
     main section {
         margin-top: 5vh;
+    }
+
+    nav {
+        border-bottom: 1px solid black;
     }
 
 }

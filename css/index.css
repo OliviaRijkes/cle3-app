@@ -24,6 +24,7 @@ main {
 
 nav {
     background-color: var(--third-mint);
+    border-bottom: 1px solid black;
 }
 
 .navigation {
