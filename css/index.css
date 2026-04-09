@@ -92,6 +92,12 @@ h1 {
     margin: 5vh 10vw;
 }
 
+.productArticle:hover {
+
+    animation: ease-in-out 1s;
+    scale: 1.04;
+}
+
 
 #product-list {
     display: flex;
