@@ -239,7 +239,7 @@ $products = [
         "stock" => 8,
         "delivery" => "18-3-2026",
         "ingredients" => "• Melkchocolade<br>• Amandelen<br>• Vanille-ijs",
-        "image" => "Magnum Almond.jpg"
+        "image" => "Magnum Almond.jpg",
     ]
 ];
 /**

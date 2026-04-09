@@ -32,7 +32,6 @@ nav {
     align-items: center;
     gap: 9vw;
     margin-right: 4vw;
-    /*height: 20vh;*/
 }
 
 .navigation a {
@@ -208,7 +207,7 @@ h1 {
     }
 
     .drinks {
-        margin-left: 18vw;
+        margin-left: 16vw;
         background-color: white;
         height: 4vh;
         width: 22vw;
@@ -246,7 +245,7 @@ h1 {
     }
 
     .rice-pasta {
-        top: 16vh;
+        top: 24vh;
         margin-left: 18vw;
         background-color: white;
         height: 4vh;
@@ -265,7 +264,7 @@ h1 {
     }
 
     .sanitary {
-        top: 24vh;
+        top: 16vh;
         margin-left: 18vw;
         background-color: white;
         height: 4vh;
@@ -278,6 +277,63 @@ h1 {
     }
 
     .sanitary p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+    .chicken {
+        top: 33.5vh;
+        margin-left: 13vw;
+        background-color: white;
+        height: 5vh;
+        width: 14vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        position: absolute;
+    }
+
+    .chicken p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+    .meat {
+        top: 33.5vh;
+        margin-left: 29vw;
+        background-color: white;
+        height: 5vh;
+        width: 14vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        position: absolute;
+    }
+
+    .meat p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+    .fish {
+        top: 33.5vh;
+        margin-left: 45vw;
+        background-color: white;
+        height: 5vh;
+        width: 14vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        position: absolute;
+    }
+
+    .fish p {
         font-size: 0.8rem;
         font-weight: bold;
         font-family: Ebrima;
@@ -376,6 +432,107 @@ h1 {
 
     .medicines p {
         font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+    .freezer-vegetables {
+        bottom: 0;
+        margin-left: 60vw;
+        background-color: white;
+        height: 2.5vh;
+        width: 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        border-bottom: none;
+        position: absolute;
+    }
+
+    .freezer-vegetables p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+
+    .cash_register {
+        top: 0;
+        right: 0;
+        background-color: white;
+        height: 14vh;
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        border-top: none;
+        border-right: none;
+        position: absolute;
+    }
+
+    .cash_register p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+    .vegetabels {
+        top: 32vh;
+        margin-left: 70vw;
+        background-color: white;
+        height: 4vh;
+        width: 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        position: absolute;
+    }
+
+    .vegetabels p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+    .fruit {
+        top: 25vh;
+        margin-left: 70vw;
+        background-color: white;
+        height: 4vh;
+        width: 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        position: absolute;
+    }
+
+    .fruit p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+    }
+
+    .entrance {
+        top: 28vh;
+        right: 0;
+        background-color: white;
+        height: 10vh;
+        width: 3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        border-right: none;
+        position: absolute;
+    }
+
+    .entrance p {
+        rotate: 270deg;
+        font-size: 0.7rem;
         font-weight: bold;
         font-family: Ebrima;
     }
