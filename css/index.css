@@ -24,6 +24,7 @@ main {
 
 nav {
     background-color: var(--third-mint);
+    border-bottom: 1px solid black;
 }
 
 .navigation {
@@ -89,6 +90,12 @@ h1 {
     color: black;
     text-align: center;
     margin: 5vh 10vw;
+}
+
+.productArticle:hover {
+
+    animation: ease-in-out 1s;
+    scale: 1.04;
 }
 
 
