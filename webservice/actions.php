@@ -351,7 +351,7 @@ $products = [
         "stock" => 2,
         "delivery" => "18-4-2026",
         "ingredients" => "• Aqua <br>• Caprylic<br>• Glycerin <br> • Pentylene Glycol <br> • Olea Europaea Fruit Oil",
-        "image" => "AH Luxe kaiserbroodjes.jpg",
+        "image" => "AH Luxe kaiserbroodjes.png",
     ],
     [
         "id" => 29,
