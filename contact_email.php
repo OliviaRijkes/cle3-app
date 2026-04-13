@@ -4,7 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require 'settings.php';
-require 'vendor/autoload.php'; //Als je vendor map (gedownloade bestanden van o.a. PHPMailer) ergens anders staat moet je dit aanpassen
+require 'vendor/autoload.php';
 
 $mail = new PHPMailer(true);
 
@@ -27,23 +27,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Port = 587;
 
         // Afzender & ontvanger
-        $mail->setFrom('davenagesser12@gmail.com', 'Nieuwe vraag');
-        $mail->addAddress('cle2mail123@gmail.com');
+        $mail->setFrom('1105575@hr.nl', 'Bevestiging vraag/klacht');
+        $mail->addAddress('$email');
 
         // Inhoud
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
         $mail->Encoding = 'base64';
-        $mail->Subject = 'Er is een nieuwe vraag verzonden';
-        $mail->Body = "<h1>Nieuwe vraag</h1>
-                       <p><strong>{$firstName} {$lastName}</strong></p>
-                       <p>{$email}</p>
-                       <p>{$question}</p>
-";
+        $mail->Subject = 'Bevestiging vraag/klacht';
+        $mail->Body = "<h1> Beste {$name}, </h1>
+                       <p> Onlangs heeft u onze contact formulier ingevuld, hieronder staat uw commentaar. </p>
+                      <p>{$complaint}</p> ";
 
         $succesMessage = '';
         $mail->send();
-        $succesMessage = 'De mail is succesvol verzonden!!!';
+        $succesMessage = 'Uw vraag/klacht is succesvol aangekomen. Er is een bevestigingsmail verzonden naar je email!';
     } catch (Exception $e) {
         echo "Fout: {$mail->ErrorInfo}";
     }

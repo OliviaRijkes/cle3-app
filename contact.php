@@ -72,8 +72,8 @@ mysqli_close($db);
         <section>
             <h1>Contactformulier</h1>
         </section>
-        <!--                <form action="contact_email.php" method="POST">-->
-        <form action="" method="POST">
+        <form action="contact_email.php" method="POST">
+            <!--        <form action="" method="POST">-->
             <label for="first-name">Naam:</label>
             <input type="text" id="first-name" name="name" placeholder="naam"/>
             <p class="error">
