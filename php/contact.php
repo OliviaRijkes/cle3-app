@@ -11,7 +11,6 @@ if (isset ($_POST['submit'])) {
 
     $name = mysqli_escape_string($db, $_POST['name']);
     $email = mysqli_escape_string($db, $_POST['email']);
-    $phoneNumber = mysqli_escape_string($db, $_POST['number']);
     $complaint = mysqli_escape_string($db, $_POST['complaint']);
 
     $errorMessage = [];
@@ -20,7 +19,7 @@ if (isset ($_POST['submit'])) {
         $errorMessage ['name'] = "Je hebt geen naam ingevuld";
     } else {
         if (is_numeric($name)) {
-            $errorMessage ['name'] = "Je naam mag geen getallen bevatten";
+            $errorMessage ['_name'] = "Je naam mag geen getallen bevatten";
         }
     }
 
@@ -75,14 +74,18 @@ mysqli_close($db);
         </section>
         <form action="contact_email.php" method="POST">
             <label for="first-name">Naam:</label>
-            <input type="text" id="first-name" name="name" required placeholder="voornaam"/>
+            <input type="text" id="first-name" name="name" required placeholder="naam"/>
+            <p class="error">
+                <?= htmlentities($errorMessage ['first_name'] ?? '') ?>
+            </p>
 
 
             <label for="last-name">Achternaam:</label>
             <input type="text" id="last-name" name="lastname" required placeholder="achternaam"/>
             <p class="error">
-                <?= htmlentities($errorMessage ['name'] ?? '') ?>
+                <?= htmlentities($errorMessage ['last_name'] ?? '') ?>
             </p>
+
 
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required placeholder="e-mail"/>
