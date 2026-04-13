@@ -73,7 +73,8 @@ h1 {
     font-size: 36px;
     font-family: Georgia, serif;
     text-align: center;
-    margin-bottom: 40px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 
@@ -89,6 +90,7 @@ textarea {
     border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 14px;
+    font-family: Ebrima;
 }
 
 textarea {
@@ -103,7 +105,8 @@ button {
     padding: 12px 16px;
     border-radius: 6px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     width: 100%;
 }
 

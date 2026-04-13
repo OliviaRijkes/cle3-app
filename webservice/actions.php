@@ -362,7 +362,7 @@ $products = [
         "stock" => 0,
         "delivery" => "18-4-2026",
         "ingredients" => "• Alcoholvrije wijn <br>• Koolzuur <br>• Suiker",
-        "image" => "Feather Rosé.jpg",
+        "image" => "Feather Rosé.png",
     ],
     [
         "id" => 30,
@@ -373,7 +373,7 @@ $products = [
         "stock" => 2,
         "delivery" => "25-4-2026",
         "ingredients" => "• Vocht: 77,5% <br>• Eiwit: 10,5% <br>• Vetgehalte: 7,0% <br> • Ruwe as: 3,2% <br> • Ruwe celstof: 0,05%",
-        "image" => "Sauvignon blanc alcoholvrij.jpg",
+        "image" => "Sauvignon blanc alcoholvrij.png",
     ],
     [
         "id" => 31,
@@ -384,7 +384,7 @@ $products = [
         "stock" => 6,
         "delivery" => "27-4-2026",
         "ingredients" => "• Natriumhypochloriet 4,2% <br>• Chloor",
-        "image" => "HG Schimmelreiniger schuimspray.jpg",
+        "image" => "HG Schimmelreiniger schuimspray.png",
     ],
     [
         "id" => 32,
@@ -395,7 +395,7 @@ $products = [
         "stock" => 0,
         "delivery" => "18-4-2026",
         "ingredients" => "• Natriumhypochloriet 4,2% <br>• Chloor",
-        "image" => "Komo Huisvuilzakken.jpg",
+        "image" => "Komo Huisvuilzakken.png",
     ],
     [
         "id" => 33,
@@ -406,7 +406,7 @@ $products = [
         "stock" => 6,
         "delivery" => "27-4-2026",
         "ingredients" => "• roomboter <br> • Waarvan toegevoegde suikers 0g per 100 gram <br> • Waarvan toegevoegd zout 0g per 100",
-        "image" => "De Zaanse Hoeve Roomboter ongezouten.jpg",
+        "image" => "De Zaanse Hoeve Roomboter ongezouten.png",
     ],
     [
         "id" => 34,
@@ -417,7 +417,7 @@ $products = [
         "stock" => 0,
         "delivery" => "18-4-2026",
         "ingredients" => "• Eireren <br>• suiker <br> •Zetmeel <br> • zout",
-        "image" => "Johma Ei salade.jpg",
+        "image" => "Johma Ei salade.png",
     ],
     [
         "id" => 35,
@@ -428,7 +428,7 @@ $products = [
         "stock" => 6,
         "delivery" => "27-4-2026",
         "ingredients" => "• Energie: 250kJ <br> • Vet: 0,2g <br> • Eiwitten: 0,3g",
-        "image" => "AH Zoete kleine appeltjes.jpg",
+        "image" => "AH Zoete kleine appeltjes.png",
     ],
     [
         "id" => 36,
@@ -439,7 +439,7 @@ $products = [
         "stock" => 0,
         "delivery" => "18-4-2026",
         "ingredients" => "Energie: 116kJ <br> • Vet: 0,2g <br> • Eiwitten: 1,5g",
-        "image" => "AH Prei.jpg",
+        "image" => "AH Prei.png",
     ],
 
 ];
