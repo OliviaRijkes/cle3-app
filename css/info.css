@@ -82,13 +82,19 @@ header p {
 }
 
 header img {
-    max-width: 25vw;
+    max-width: 20vw;
     border: 2px solid black;
     border-radius: 10px;
 }
 
 section {
-    padding: 4vh 4vw;
+    padding: 4vh 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
 }
 
 .imgContainer {
@@ -97,20 +103,81 @@ section {
     gap: 10vw;
 }
 
-.rowContainer {
+.columnContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    padding: 4vh 0;
+}
 
+.rowContainer {
+    display: flex;
+    gap: 10vw;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    justify-content: space-between;
+}
+
+
+.rowContainer img{
+    width: 30vw;
+    height: 30vw;
+}
+
+.rowContainer video {
+    width: 30vw;
+    height: 30vw;
+}
+
+.ourTeam img{
+    width: 400px;
 }
 
 h3 {
     background-color: var(--first-dark);
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
 }
 
 .ourTeam {
     background-color: var(--first-dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+    text-align: center;
+}
+
+.teamInfo img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    border: solid 1px black;
 }
 
 footer {
     background-color: var(--third-mint);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer img {
+    height: auto;
+    width: 50px;
+
+}
+
+.footerRowContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.footerRowContainer a {
+    text-decoration: none;
+    color: black;
 }
 
 @media (max-width: 480px) {
@@ -205,11 +272,6 @@ footer {
         height: 22vh;
         width: 15vw;
 
-    }
-
-    .footerRowContainer a {
-        text-decoration: none;
-        color: black;
     }
 
     .footerRowContainer a:hover {
