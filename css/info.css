@@ -13,6 +13,7 @@
 }
 
 body {
+    font-size: 1.35rem;
     font-family: Ebrima;
     margin: 0;
     background-color: var(--second-blue);
@@ -120,7 +121,7 @@ h2 {
 }
 
 
-.rowContainer img{
+.rowContainer img {
     width: 30vw;
     height: 30vw;
 }
@@ -130,7 +131,7 @@ video {
     height: 30vw;
 }
 
-.ourTeam img{
+.ourTeam img {
     width: 400px;
 }
 
