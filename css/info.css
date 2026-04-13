@@ -125,7 +125,7 @@ h2 {
     height: 30vw;
 }
 
-.rowContainer video {
+video {
     width: 30vw;
     height: 30vw;
 }
@@ -232,6 +232,7 @@ footer img {
 
     .rowContainer img {
         width: 40vw;
+        height: auto;
         border: 2px solid black;
         border-radius: 10px;
     }
