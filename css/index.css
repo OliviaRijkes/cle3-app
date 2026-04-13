@@ -638,6 +638,10 @@ h1 {
 
     }
 
+    main {
+        background-color: var(--fourth-beige);
+    }
+
     .footerRowContainer {
         display: flex;
         gap: 4vw;
