@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --first-dark: #283044;
+    --second-blue: #78a1bb;
+    --third-mint: #Ebf5ee;
+    --fourth-beige: #bfa89e;
+    --fifth-taupe: #8b786d;
+}
+
+body {
+    margin: 0;
+    background-color: var(--second-blue);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: var(--third-mint);
+    border-bottom: 1px solid black;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9vw;
+    margin-right: 4vw;
+}
+
+.navigation a {
+    font-size: 1.2rem;
+    font-family: Ebrima;
+    text-decoration: none;
+    color: #26313A;
+    transition: all 0.2s ease;
+    padding: 3px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation a:hover {
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color: var(--second-blue);
+    color: white;
+    padding: 5px;
+}
+
+
+.navigation img {
+    height: 22vh;
+    width: 15vw;
+}
+
+.center-container {
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 650px;
+}
+
+h1 {
+    color: #454545;
+    font-size: 36px;
+    font-family: Georgia, serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+button {
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+@media (max-width: 480px) {
+
+
+    footer {
+        background-color: var(--third-mint);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    .footerRowContainer {
+        display: flex;
+        gap: 4vw;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 2vh;
+    }
+
+    footer img {
+        height: 22vh;
+        width: 15vw;
+
+    }
+
+    .footerRowContainer a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .footerRowContainer a:hover {
+        text-decoration: underline;
+    }
+
+    .footerColumnContainer {
+        display: flex;
+        gap: 2.3vw;
+        justify-content: center;
+        margin-top: 4vh;
+    }
+
+    footer {
+        font-family: Ebrima;
+    }
+}
