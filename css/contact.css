@@ -110,6 +110,13 @@ button {
     width: 100%;
 }
 
+.error {
+    color: red;
+    font-size: 1rem;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
 
 @media (max-width: 480px) {
 
