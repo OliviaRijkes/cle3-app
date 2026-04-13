@@ -15,11 +15,13 @@
 body {
     margin: 0;
     background-color: var(--second-blue);
+    font-family: Arial;
 }
 
 main {
     display: flex;
     flex-direction: column;
+
 }
 
 nav {
@@ -79,13 +81,14 @@ h1 {
 
 
 form {
+    gap: 6px;
     display: flex;
     flex-direction: column;
 }
 
 input,
 textarea {
-    padding: 10px;
+    padding: 15px;
     border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 14px;

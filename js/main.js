@@ -12,7 +12,7 @@ let productSearch;
 window.addEventListener('load', init)
 
 function init() {
-    fetchStuff('https://cle3-app.test/webservice/', loadProducts);
+    fetchStuff('http://cle3-app.test/webservice/', loadProducts);
 
     body = document.querySelector('body');
     detailModal = document.querySelector('#product-detail');
@@ -54,7 +54,7 @@ function productClickHandler(e) {
     if (e.target.id === 'info') {
         // console.log(e.target.dataset.id)
         // console.log(`https://cle3-app.test/webservice/?id=${e.target.dataset.id}`)
-        fetchStuff(`https://cle3-app.test/webservice/?id=${e.target.dataset.id}`, loadDetails)
+        fetchStuff(`http://cle3-app.test/webservice/?id=${e.target.dataset.id}`, loadDetails)
     }
     if (e.target.id === 'goal') {
         goal = [e.target.dataset.x, e.target.dataset.y]

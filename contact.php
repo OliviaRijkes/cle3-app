@@ -74,25 +74,25 @@ mysqli_close($db);
         </section>
         <!--                <form action="contact_email.php" method="POST">-->
         <form action="" method="POST">
-            <label for="first-name">Naam:</label>
-            <input type="text" id="first-name" name="name" placeholder="naam"/>
+            <label for="first-name">Naam</label>
+            <input type="text" id="first-name" name="name" placeholder="Naam"/>
             <p class="error">
                 <?= htmlentities($errorMessage ['name'] ?? '') ?>
             </p>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="e-mail"/>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="E-mail"/>
             <p class="error">
                 <?= htmlentities($errorMessage ['email'] ?? '') ?>
             </p>
 
-            <label for="question"> Jouw vraag: </label>
-            <textarea name="complaint" rows="2" cols="30" placeholder="type uw vraag of klacht"></textarea>
+            <label for="question"> Jouw vraag </label>
+            <textarea name="complaint" rows="2" cols="30" placeholder="Uw bericht"></textarea>
             <p class="error">
                 <?= htmlentities($errorMessage ['complaint'] ?? '') ?>
             </p>
 
-            <button type="submit" name="submit">verstuur</button>
+            <button type="submit" name="submit">Verstuur</button>
 
         </form>
     </div>
