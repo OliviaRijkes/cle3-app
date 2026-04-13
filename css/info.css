@@ -5,7 +5,7 @@
 }
 
 :root {
-    --first-dark: #283044;
+    --first-dark: #5e697e;
     --second-blue: #78a1bb;
     --third-mint: #Ebf5ee;
     --fourth-beige: #bfa89e;
@@ -63,6 +63,9 @@ main {
 
 
 @media (max-width: 480px) {
+    nav {
+        background-color: var(--third-mint);
+    }
 
     header {
         background-color: var(--fourth-beige);
@@ -179,4 +182,37 @@ main {
         border-bottom: 1px solid black;
     }
 
+    .ourTeam {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.2rem;
+        border-bottom: 1px solid black;
+        background-color: var(--first-dark);
+    }
+
+    .teamInfo {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 50%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 8px;
+        padding: 5vw;
+    }
+
+    h3 {
+        background-color: var(--first-dark);
+        padding-top: 7vh;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .teamInfo img {
+        width: 40vw;
+        height: 40vw;
+        border-radius: 50%;
+        border: solid 1px black;
+    }
 }
