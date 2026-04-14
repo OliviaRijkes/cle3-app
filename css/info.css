@@ -67,6 +67,8 @@ nav {
 }
 
 header {
+    justify-content: center;
+    align-items: center;
     background-color: var(--fourth-beige);
     display: flex;
     flex-direction: column;
@@ -158,6 +160,27 @@ h3 {
     height: 20vw;
     border-radius: 50%;
     border: solid 1px black;
+}
+
+.infoButton {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    background-color: var(--second-blue);
+    border: 2px solid black;
+    margin-top: 3vh;
+    width: 14vw;
+    height: 7vh;
+    transition: ease-in-out 0.2s;
+    scale: 1;
+}
+
+.infoButton:hover {
+    transition: ease-in-out 0.2s;
+    scale: 1.08;
+    cursor: pointer;
 }
 
 footer {
@@ -327,5 +350,20 @@ footer img {
         height: 40vw;
         border-radius: 50%;
         border: solid 1px black;
+    }
+
+    .infoButton {
+        border-radius: 20px;
+        font-size: 1rem;
+        background-color: var(--second-blue);
+        border: 2px solid black;
+
+        width: 23vw;
+        height: 9vh;
+    }
+
+    .infoButton:hover {
+        transition: ease-in-out 0.2s;
+        scale: 1.05;
     }
 }
