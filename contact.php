@@ -61,7 +61,7 @@ mysqli_close($db);
         <img src="images/logo.png"
              alt="Logo van Shoppi">
         <a href="../index.html"> Home </a>
-        <a href="../info.html"> About Shoppi </a>
+        <a href="../info.html"> Over Shoppi </a>
         <a href="contact.php">Contactpagina</a>
 
     </div>
