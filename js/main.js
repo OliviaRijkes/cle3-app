@@ -154,27 +154,6 @@ function loadDetails(data) {
 
 
     const productName = data.name;
-    // const productCategory = data.category;
-
-    // const category = data.productCategory
-    // if (category === "Pasta & Rijst") {
-    //     .classList.add('');
-    // } else if (category === "Snacks") {
-    //     .classList.add('');
-    // } else if (category === "Drinken") {
-    //     .classList.add('')
-    // } else if (category === "Vis & Kip") {
-    //     .classList.add('')
-    // } else if (category === "Fruit & Groente") {
-    //     .classList.add('')
-    // } else if (category === "Medicijnen") {
-    //     .classList.add('')
-    // } else if (category === "Melk & Yoghurt") {
-    //     .classList.add('')
-    // } else if (category === "Vlees") {
-    //     .classList.add('')
-    // } else if (category === "Ijs") {
-    //     .classList.add('')
 
     detailContent.textContent = '';
 
