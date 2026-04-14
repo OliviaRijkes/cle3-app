@@ -1,11 +1,10 @@
 <?php
 
-$host = '127.0.0.1';
-$user = 'root';
-$password = '';
-$database = 'shoppi';
+session_start();
 
-$db = mysqli_connect($host, $user, $password, $database);
+/** @var mysqli $db */
+require_once "includes/database.php";
+
 
 if (isset ($_POST['submit'])) {
 
@@ -19,7 +18,7 @@ if (isset ($_POST['submit'])) {
         $errorMessage ['name'] = "Je hebt geen naam ingevuld";
     } else {
         if (is_numeric($name)) {
-            $errorMessage ['_name'] = "Je naam mag geen getallen bevatten";
+            $errorMessage ['name'] = "Je naam mag geen getallen bevatten";
         }
     }
 
