@@ -53,7 +53,7 @@ mysqli_close($db);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Contactpagina</title>
-    <link rel="stylesheet" href="../contact.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
 <nav>

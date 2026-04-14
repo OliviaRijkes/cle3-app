@@ -1,7 +1,3 @@
-let lookDirection
-let position
-let goal = {x: 0, y: 0}
-
 let products;
 
 let body;
@@ -16,7 +12,7 @@ let articleproductList;
 window.addEventListener('load', init)
 
 function init() {
-    fetchStuff('https://cle3-app.test/webservice/', loadProducts);
+    fetchStuff('http://cle3-app.test/webservice/', loadProducts);
 
     body = document.querySelector('body');
     detailModal = document.querySelector('#product-detail');
@@ -59,21 +55,21 @@ function productClickHandler(e) {
         return;
     }
     if (e.target.id === 'info') {
-        // console.log(e.target.dataset.id)
-        // console.log(`https://cle3-app.test/webservice/?id=${e.target.dataset.id}`)
-        fetchStuff(`https://cle3-app.test/webservice/?id=${e.target.dataset.id}`, loadDetails)
+        fetchStuff(`http://cle3-app.test/webservice/?id=${e.target.dataset.id}`, loadDetails)
     }
-    if (e.target.id === 'goal') {
-        goal = [e.target.dataset.x, e.target.dataset.y]
-        loadRoute()
-        //turn the cpx locator on
+    if (e.target.id === 'route') {
+        //reading the category in the button to get the end coords using catGoal
+        for (const cat of catGoal) {
+            if (cat.name === e.target.dataset.category){
+                loadRoute(cat.end)
+                break;
+            }
+        }
     }
 }
 
 function loadProducts(data) {
     for (const product of data) {
-        // console.log(product)
-
         //fill the products
         const article = document.createElement('article')
         const productImage = document.createElement('div')
@@ -190,9 +186,27 @@ function loadDetails(data) {
 
 }
 
-//if the user hits an intersection
-function showNewDirection() {
-    //first go up||down
+//Loadroute uses the functions of route.js to calculate and draw the route.
+//It uses the given end coords to calculate the route
+function loadRoute(end) {
+    //it should clear the route for a new one (it doesn't work and can't be fixed)
+    console.clear()
+    let routeElements = document.querySelectorAll('.xRoute, .yRoute')
+    for (const routeElement of routeElements) {
+        routeElement.remove()
+    }
+    console.log(routeElements)
+
+    //calculate the route steps
+    calcRoute({...end})
+    map = document.getElementById('map')
+    console.log(route)
+
+    //draw every routeElement per step of one position to the next from the route array
+    for (let i = 0; i < route.length-1; i++) {
+        drawStep(route[i],route[i+1])
+
+    }
 }
 
 function dialogClickHandler(e) {
