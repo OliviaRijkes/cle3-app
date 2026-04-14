@@ -8,6 +8,10 @@ let body;
 let detailModal;
 let detailContent;
 let productSearch;
+let input;
+let productList;
+let articleproductList;
+
 
 window.addEventListener('load', init)
 
@@ -25,9 +29,12 @@ function init() {
     detailModal.addEventListener('close', dialogCloseHandler);
 
 
-    productSearch = document.querySelector('#first-name');
+    productSearch = document.querySelector('#search-input');
     productSearch.addEventListener('input', productFilter);
 
+    input = document.getElementById('search-input');
+    productList = document.getElementById("product-list");
+    articleproductList = productList.getElementsByTagName('article');
 }
 
 function fetchStuff(url, callback) {
@@ -86,6 +93,7 @@ function loadProducts(data) {
         route.id = "route"
         route.textContent = "Route"
         article.classList.add('productArticle')
+        article.dataset.category = product.category;
 
         img.src = `images/${product.image}`
         img.alt = product.name
@@ -114,35 +122,33 @@ function loadProducts(data) {
 
 function productFilter() {
 
-    let input, filter, productList, articleproductList, h2, i, txtValue;
-    input = document.getElementById('first-name');
+    let filter, h2, i, txtValue, categoryValue;
     filter = input.value.toUpperCase();
-    productList = document.getElementById("product-list");
-    articleproductList = productList.getElementsByTagName('article');
 
-    const Message = document.querySelector('.empty-message');
-    if (Message) {
-        Message.remove();
+    const message = document.querySelector('.empty-message');
+    if (message) {
+        message.remove();
     }
-    let productCheck = 0;
+    let productCheck = false;
     // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < articleproductList.length; i++) {
-
         h2 = articleproductList[i].getElementsByTagName("h2")[0];
         txtValue = h2.textContent || h2.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        categoryValue = articleproductList[i].dataset.category;
+
+        if (txtValue.toUpperCase().indexOf(filter) > -1 || categoryValue.toUpperCase().indexOf(filter) > -1) {
             articleproductList[i].style.display = "";
-            productCheck++;
+            productCheck = true;
         } else {
             articleproductList[i].style.display = "none";
         }
     }
 
-    if (productCheck === 0) {
-        const empty_input = document.createElement('p');
-        empty_input.textContent = `Helaas zijn er geen artikelen gevonden`
-        empty_input.classList.add('empty-message');
-        productList.appendChild(empty_input);
+    if (productCheck === false) {
+        const emptyInput = document.createElement('p');
+        emptyInput.textContent = `Helaas zijn er geen artikelen gevonden`
+        emptyInput.classList.add('empty-message');
+        productList.appendChild(emptyInput);
     }
 }
 

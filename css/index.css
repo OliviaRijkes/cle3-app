@@ -72,6 +72,12 @@ nav {
 
 
 h1 {
+    font-size: 2rem;
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+h2 {
     font-size: 1.15rem;
     margin-bottom: 2vh;
 
@@ -689,6 +695,12 @@ h1 {
 @media (max-width: 480px) {
 
     h1 {
+        font-family: Ebrima;
+        max-width: 440px;
+        margin-left: 3vw;5
+    }
+
+    h2 {
         font-family: Ebrima;
         max-width: 440px;
         margin-left: 3vw;
