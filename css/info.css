@@ -83,7 +83,7 @@ header p {
 }
 
 header img {
-    max-width: 20vw;
+    width: 20vw;
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -201,7 +201,7 @@ footer img {
     }
 
     header img {
-        height: 40vw;
+        height: auto;
         width: 40vw;
         border: 2px solid black;
         border-radius: 10px;
