@@ -88,6 +88,7 @@ function loadProducts(data) {
         article.classList.add('productArticle')
 
         img.src = `images/${product.image}`
+        img.alt = product.name
         name.textContent = product.name
         size.textContent = product.size
         price.textContent = `€ ${product.price}`
