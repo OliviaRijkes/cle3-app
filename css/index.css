@@ -547,6 +547,71 @@ h1 {
 
 }
 
+#map {
+    margin: 5vh 5vw;
+    width: 90%;
+    height: 250px;
+    background-color: lightgreen;
+    position: relative;
+
+    div {
+        position: absolute;
+        font-size: .8rem;
+        font-weight: bold;
+        font-family: Ebrima;
+        background-color: white;
+        text-align: center;
+        padding: 5px;
+        border: solid 2px;
+        width: 130px;
+        height: 50px;
+    }
+
+    #drinks {
+
+    }
+
+    /*xpos*/
+
+    #meat, #meds, #bread {
+        top: 100px;
+    }
+
+    #greens, #refrigerated, #entrance {
+        top: 200px;
+
+    }
+
+    /*ypos*/
+
+    #sanitary, #meds, #refrigerated {
+        left: 151px;
+    }
+
+    #check-out, #bread, #entrance {
+        left: 302px;
+
+    }
+
+    /*route segments*/
+
+    .xRoute, .yRoute {
+        background-color: red;
+        border: none;
+    }
+
+    .xRoute {
+        width: 76px;
+        height: 1px;
+
+    }
+
+    .yRoute {
+        width: 1px;
+        height: 100px;
+    }
+}
+
 .modal {
     opacity: 0;
     transition: all 0.7s ease;

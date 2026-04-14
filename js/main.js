@@ -58,13 +58,14 @@ function productClickHandler(e) {
     }
     if (e.target.id === 'goal') {
         goal = [e.target.dataset.x, e.target.dataset.y]
+        loadRoute()
         //turn the cpx locator on
     }
 }
 
 function loadProducts(data) {
     for (const product of data) {
-        console.log(product)
+        // console.log(product)
 
         //fill the products
         const article = document.createElement('article')
