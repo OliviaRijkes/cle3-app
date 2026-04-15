@@ -86,7 +86,7 @@ function lightUpDestination(category) {
         destination = document.getElementById('meat')
     }
 
-    destination.style.backgroundColor = 'blue';
+    destination.style.backgroundColor = 'aqua';
 }
 
 function loadProducts(data) {
