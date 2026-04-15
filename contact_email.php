@@ -3,53 +3,53 @@
 session_start();
 
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require 'vendor/autoload.php';
-
-$mail = new PHPMailer(true);
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
-
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $complaint = $_POST['complaint'];
-
-
-    try {
-        // SMTP instellingen
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'davenagesser12@gmail.com';
-        $mail->Password = 'goqf uitz ayoc qwqa';
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
-
-        // Afzender & ontvanger
-        $mail->setFrom('1105575@hr.nl', 'Bevestiging vraag/klacht');
-        $mail->addAddress($email);
-        $mail->addBCC('1105575@hr.nl');
-
-        // Inhoud
-        $mail->isHTML(true);
-        $mail->CharSet = 'UTF-8';
-        $mail->Encoding = 'base64';
-        $mail->Subject = 'Bevestiging vraag/klacht';
-        $mail->Body = "<h1> Beste {$name}, </h1>
-                       <p> Onlangs heeft u onze contactformulier ingevuld, hieronder staat uw commentaar ter bevestiging: </p>
-                      <p>{$complaint}</p> ";
-
-        $succesMessage = '';
-        $mail->send();
-        $succesMessage = 'Uw vraag/klacht is succesvol aangekomen. Er is een bevestigingsmail verzonden naar uw email!';
-
-    } catch (Exception $e) {
-        echo "Fout: {$mail->ErrorInfo}";
-    }
-}
+//use PHPMailer\PHPMailer\PHPMailer;
+//use PHPMailer\PHPMailer\Exception;
+//
+//require 'vendor/autoload.php';
+//
+//$mail = new PHPMailer(true);
+//
+//if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+//
+//
+//    $name = $_POST['name'];
+//    $email = $_POST['email'];
+//    $complaint = $_POST['complaint'];
+//
+//
+//    try {
+//        // SMTP instellingen
+//        $mail->isSMTP();
+//        $mail->Host = 'smtp.gmail.com';
+//        $mail->SMTPAuth = true;
+//        $mail->Username = 'davenagesser12@gmail.com';
+//        $mail->Password = 'goqf uitz ayoc qwqa';
+//        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+//        $mail->Port = 587;
+//
+//        // Afzender & ontvanger
+//        $mail->setFrom('1105575@hr.nl', 'Bevestiging vraag/klacht');
+//        $mail->addAddress($email);
+//        $mail->addBCC('1105575@hr.nl');
+//
+//        // Inhoud
+//        $mail->isHTML(true);
+//        $mail->CharSet = 'UTF-8';
+//        $mail->Encoding = 'base64';
+//        $mail->Subject = 'Bevestiging vraag/klacht';
+//        $mail->Body = "<h1> Beste {$name}, </h1>
+//                       <p> Onlangs heeft u onze contactformulier ingevuld, hieronder staat uw commentaar ter bevestiging: </p>
+//                      <p>{$complaint}</p> ";
+//
+////        $succesMessage = '';
+//        $mail->send();
+////        $succesMessage = 'Uw vraag/klacht is succesvol aangekomen. Er is een bevestigingsmail verzonden naar uw email!';
+//
+//    } catch (Exception $e) {
+//        echo "Fout: {$mail->ErrorInfo}";
+//    }
+//}
 
 ?>
 
@@ -77,7 +77,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <main>
     <h1> Shoppi </h1>
 
-    <h2><?= $succesMessage ?></h2>
+    <h2><?php
+        if (isset($_SESSION['success_message'])) {
+            echo $_SESSION['success_message'];
+        }
+        ?></h2>
     <div class="image">
         <img src="https://png.pngtree.com/png-clipart/20241201/original/pngtree-thumbs-up-emoji-png-image_17458517.png"
              alt="blije emotie">

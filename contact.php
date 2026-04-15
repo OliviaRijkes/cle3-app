@@ -1,5 +1,8 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 session_start();
 
 /** @var mysqli $db */
@@ -37,7 +40,49 @@ if (isset ($_POST['submit'])) {
 
         $results = mysqli_query($db, $query);
 
-        header('Location: index.php');
+        require 'vendor/autoload.php';
+
+        $mail = new PHPMailer(true);
+
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $complaint = $_POST['complaint'];
+
+
+        try {
+            // SMTP instellingen
+            $mail->isSMTP();
+            $mail->Host = 'smtp.gmail.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'davenagesser12@gmail.com';
+            $mail->Password = 'goqf uitz ayoc qwqa';
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port = 587;
+
+            // Afzender & ontvanger
+            $mail->setFrom('1105575@hr.nl', 'Bevestiging vraag/klacht');
+            $mail->addAddress($email);
+            $mail->addBCC('1105575@hr.nl');
+
+            // Inhoud
+            $mail->isHTML(true);
+            $mail->CharSet = 'UTF-8';
+            $mail->Encoding = 'base64';
+            $mail->Subject = 'Bevestiging vraag/klacht';
+            $mail->Body = "<h1> Beste {$name}, </h1>
+                       <p> Onlangs heeft u onze contactformulier ingevuld, hieronder staat uw commentaar ter bevestiging: </p>
+                      <p>{$complaint}</p> ";
+
+//        $succesMessage = '';
+            $mail->send();
+//        $succesMessage = 'Uw vraag/klacht is succesvol aangekomen. Er is een bevestigingsmail verzonden naar uw email!';
+
+        } catch (Exception $e) {
+            echo "Fout: {$mail->ErrorInfo}";
+        }
+
+        $_SESSION['success_message'] = 'Uw vraag/klacht is succesvol aangekomen. Er is een bevestigingsmail verzonden naar uw email!';
+        header('Location: contact_email.php');
         exit;
     }
 
@@ -71,23 +116,26 @@ mysqli_close($db);
         <section>
             <h1>Contactformulier</h1>
         </section>
-        <form action="contact_email.php" method="POST">
-            <!--        <form action="" method="POST">-->
+        <!--        <form action="contact_email.php" method="POST">-->
+        <form action="" method="POST">
             <label for="first-name">Naam:</label>
-            <input type="text" id="first-name" name="name" placeholder="naam"/>
+            <input type="text" id="first-name" name="name" placeholder="naam"
+                   value="<?= htmlentities($_POST['name'] ?? '') ?>"/>
             <p class="error">
                 <?= htmlentities($errorMessage ['name'] ?? '') ?>
             </p>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="E-mail"/>
+            <input type="email" id="email" name="email" placeholder="E-mail"
+                   value="<?= htmlentities($_POST['email'] ?? '') ?>"/>
             <p class="error">
                 <?= htmlentities($errorMessage ['email'] ?? '') ?>
             </p>
 
             <label for="question"> Jouw vraag </label>
-            <textarea name="complaint" rows="2" cols="30" placeholder="Uw bericht"></textarea>
-            <p class="error">
+            <textarea name="complaint" rows="2" cols="30"
+                      placeholder="Typ hier uw bericht"><?= htmlentities($_POST['complaint'] ?? '') ?></textarea>
+            <p class=" error">
                 <?= htmlentities($errorMessage ['complaint'] ?? '') ?>
             </p>
 

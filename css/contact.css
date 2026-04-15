@@ -72,7 +72,7 @@ nav {
 
 h1 {
     color: #000000;
-    font-size: 36px;
+    font-size: 2rem;
     font-family: Georgia, serif;
     text-align: center;
     margin-top: 5vh;
@@ -115,7 +115,7 @@ button {
 .error {
     color: darkred;
     font-size: 1.15em;
-    margin-top: 2vh;
+    margin-top: 1vh;
     margin-bottom: 2vh;
 }
 

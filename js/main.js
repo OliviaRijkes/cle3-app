@@ -12,7 +12,7 @@ let articleproductList;
 window.addEventListener('load', init)
 
 function init() {
-    fetchStuff('http://cle3-app.test/webservice/', loadProducts);
+    fetchStuff('https://cle3-app.test/webservice/', loadProducts);
 
     body = document.querySelector('body');
     detailModal = document.querySelector('#product-detail');
@@ -55,12 +55,12 @@ function productClickHandler(e) {
         return;
     }
     if (e.target.id === 'info') {
-        fetchStuff(`http://cle3-app.test/webservice/?id=${e.target.dataset.id}`, loadDetails)
+        fetchStuff(`https://cle3-app.test/webservice/?id=${e.target.dataset.id}`, loadDetails)
     }
     if (e.target.id === 'route') {
         //reading the category in the button to get the end coords using catGoal
         for (const cat of catGoal) {
-            if (cat.name === e.target.dataset.category){
+            if (cat.name === e.target.dataset.category) {
                 loadRoute(cat.end)
                 break;
             }
@@ -79,7 +79,7 @@ function loadProducts(data) {
         namePrice.id = "name-price"
         infoRoute.id = "info-route"
         const img = document.createElement('img')
-        const name = document.createElement('h2')
+        const name = document.createElement('h3')
         const price = document.createElement('strong')
         const size = document.createElement('p')
         const info = document.createElement('button')
@@ -128,7 +128,7 @@ function productFilter() {
     let productCheck = false;
     // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < articleproductList.length; i++) {
-        h2 = articleproductList[i].getElementsByTagName("h2")[0];
+        h2 = articleproductList[i].getElementsByTagName("h3")[0];
         txtValue = h2.textContent || h2.innerText;
         categoryValue = articleproductList[i].dataset.category;
 
@@ -203,8 +203,8 @@ function loadRoute(end) {
     console.log(route)
 
     //draw every routeElement per step of one position to the next from the route array
-    for (let i = 0; i < route.length-1; i++) {
-        drawStep(route[i],route[i+1])
+    for (let i = 0; i < route.length - 1; i++) {
+        drawStep(route[i], route[i + 1])
 
     }
 }
