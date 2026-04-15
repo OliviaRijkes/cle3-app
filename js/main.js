@@ -7,12 +7,12 @@ let productSearch;
 let input;
 let productList;
 let articleproductList;
-
+let destination;
 
 window.addEventListener('load', init)
 
 function init() {
-    fetchStuff('https://cle3-app.test/webservice/', loadProducts);
+    fetchStuff('http://cle3-app.test/webservice/', loadProducts);
 
     body = document.querySelector('body');
     detailModal = document.querySelector('#product-detail');
@@ -55,7 +55,7 @@ function productClickHandler(e) {
         return;
     }
     if (e.target.id === 'info') {
-        fetchStuff(`https://cle3-app.test/webservice/?id=${e.target.dataset.id}`, loadDetails)
+        fetchStuff(`http://cle3-app.test/webservice/?id=${e.target.dataset.id}`, loadDetails)
     }
     if (e.target.id === 'route') {
         //reading the category in the button to get the end coords using catGoal
@@ -65,7 +65,28 @@ function productClickHandler(e) {
                 break;
             }
         }
+        console.log(e.target.dataset.category)
+        lightUpDestination(e.target.dataset.category)
     }
+}
+function lightUpDestination(category) {
+    if (category === 'PastaRijst' || category === 'Brood') {
+        destination = document.getElementById('bread')
+    } else if (category === 'Koeling' || category === 'Pizza' || category === 'MelkYoghurt' || category === 'Ijs') {
+        destination = document.getElementById('refrigerated')
+    } else if (category === 'GroenteFruit') {
+        destination = document.getElementById('greens')
+    } else if (category === 'Sanitair' || category === 'DierenVoeding' || category === 'Verzorging') {
+        destination = document.getElementById('sanitary')
+    } else if (category === 'Medicijnen') {
+        destination = document.getElementById('meds')
+    } else if (category === 'Alcohol' || category === 'Drinken') {
+        destination = document.getElementById('drinks')
+    } else if (category === 'Vlees' || category === 'VisKip') {
+        destination = document.getElementById('meat')
+    }
+
+    destination.style.backgroundColor = 'blue';
 }
 
 function loadProducts(data) {
