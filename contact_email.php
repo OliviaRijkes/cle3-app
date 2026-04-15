@@ -83,7 +83,7 @@ session_start();
         }
         ?></h2>
     <div class="image">
-        <img src="https://png.pngtree.com/png-clipart/20241201/original/pngtree-thumbs-up-emoji-png-image_17458517.png"
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/047/269/661/small_2x/thumb-character-isolated-in-transparent-background-png.png"
              alt="blije emotie">
     </div>
 </main>

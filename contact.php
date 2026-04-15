@@ -71,6 +71,7 @@ if (isset ($_POST['submit'])) {
             $mail->Subject = 'Bevestiging vraag/klacht';
             $mail->Body = "<h1> Beste {$name}, </h1>
                        <p> Onlangs heeft u onze contactformulier ingevuld, hieronder staat uw commentaar ter bevestiging: </p>
+                       <p> We nemen zo snel mogelijk contact met u op via de mail, bedankt voor u geduld!</p>
                       <p>{$complaint}</p> ";
 
 //        $succesMessage = '';
