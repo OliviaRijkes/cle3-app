@@ -70,7 +70,7 @@ function productClickHandler(e) {
     }
 }
 function lightUpDestination(category) {
-    if (category === 'PastaRijst' || category === 'Brood') {
+    if (category === 'PastaRijst' || category === 'Brood' || category === 'Snacks') {
         destination = document.getElementById('bread')
     } else if (category === 'Koeling' || category === 'Pizza' || category === 'MelkYoghurt' || category === 'Ijs') {
         destination = document.getElementById('refrigerated')
