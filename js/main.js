@@ -76,7 +76,7 @@ function lightUpDestination(category) {
         destination = document.getElementById('refrigerated')
     } else if (category === 'GroenteFruit') {
         destination = document.getElementById('greens')
-    } else if (category === 'Sanitair' || category === 'DierenVoeding' || category === 'Verzorging') {
+    } else if (category === 'Sanitair' || category === 'Dierenvoeding' || category === 'Verzorging') {
         destination = document.getElementById('sanitary')
     } else if (category === 'Medicijnen') {
         destination = document.getElementById('meds')
