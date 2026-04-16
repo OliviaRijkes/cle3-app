@@ -97,6 +97,29 @@ h2 {
     width: 20vw;
 }
 
+footer {
+    background-color: var(--third-mint);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer img {
+    height: auto;
+    width: 50px;
+
+}
+
+.footerRowContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.footerRowContainer a {
+    text-decoration: none;
+    color: black;
+}
+
 @media (max-width: 480px) {
 
 
