@@ -119,7 +119,7 @@ mysqli_close($db);
         </section>
         <!--        <form action="contact_email.php" method="POST">-->
         <form action="" method="POST">
-            <label for="first-name">Naam*:</label>
+            <label for="first-name">Naam*</label>
             <input type="text" id="first-name" name="name" placeholder="naam"
                    value="<?= htmlentities($_POST['name'] ?? '') ?>"/>
             <p class="error">
