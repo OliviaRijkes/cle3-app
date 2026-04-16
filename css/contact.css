@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial;
 }
 
 :root {
@@ -73,7 +74,6 @@ nav {
 h1 {
     color: #000000;
     font-size: 2rem;
-    font-family: Georgia, serif;
     text-align: center;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -118,6 +118,7 @@ button {
     margin-top: 1vh;
     margin-bottom: 2vh;
 }
+
 footer {
     background-color: var(--third-mint);
     display: flex;
