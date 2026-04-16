@@ -62,7 +62,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/contact_bevestiging.css">
 
-    <title>Document</title>
+    <title>Contactpagina</title>
 </head>
 <body>
 <nav>

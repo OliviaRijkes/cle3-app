@@ -12,7 +12,7 @@ let destination;
 window.addEventListener('load', init)
 
 function init() {
-    fetchStuff('http://cle3-app.test/webservice/', loadProducts);
+    fetchStuff('https://cle3-app.test/webservice/', loadProducts);
 
     body = document.querySelector('body');
     detailModal = document.querySelector('#product-detail');
@@ -55,7 +55,7 @@ function productClickHandler(e) {
         return;
     }
     if (e.target.id === 'info') {
-        fetchStuff(`http://cle3-app.test/webservice/?id=${e.target.dataset.id}`, loadDetails)
+        fetchStuff(`https://cle3-app.test/webservice/?id=${e.target.dataset.id}`, loadDetails)
     }
     if (e.target.id === 'route') {
         //reading the category in the button to get the end coords using catGoal
@@ -69,6 +69,7 @@ function productClickHandler(e) {
         lightUpDestination(e.target.dataset.category)
     }
 }
+
 function lightUpDestination(category) {
     if (category === 'PastaRijst' || category === 'Brood' || category === 'Snacks') {
         destination = document.getElementById('bread')
